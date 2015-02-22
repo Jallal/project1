@@ -9,6 +9,7 @@
 class SudokuCell {
     private $answer;       // The answer for the given cell
     private $showAnswer = false;   // Whether or not to show the answer
+    private $userGuess;
     private $notes = array();  // Notes of possible answers for the cell
     private $row;              // Row index for the cell 0-8
     private $column;           // Column index for the cell 0-8
@@ -39,4 +40,11 @@ class SudokuCell {
         return $this->notes;
     }
 
+    public function setUserGuess($guess) {
+        $this->userGuess = $guess;
+    }
+
+    public function getUserGuess() {
+        return $this->userGuess;
+    }
 }

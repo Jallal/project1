@@ -38,6 +38,14 @@ class SudokuCellTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals(1, $cellNotes[1]);
 		$this->assertEquals(3, $cellNotes[2]);
 	}
+
+	public function test_setUserGuess() {
+		$cell = new SudokuCell(1, 2, 3);
+
+		$cell->setUserGuess(4);
+
+		$this->assertEquals(4, $cell->getUserGuess());
+	}
 }
 
 /// @endcond
