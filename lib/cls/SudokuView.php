@@ -22,30 +22,24 @@ class SudokuView {
     public function presentCell($ndx) {
 
         $html = <<<HTML
-<div class="cells">
-<table border="1" style="width:100%">
-
-
+<table>
+  <caption>SUDOKU WOO</caption>
+  <colgroup><col><col><col>
+  <colgroup><col><col><col>
+  <colgroup><col><col><col>
+  <tbody>
 HTML;
-        for ($i = 0; $i < 9; $i++) {
+        for ($i = 0; $i < 3; $i++) {
             $html .= <<<HTML
-            <tr>
-                <td>$i,0 - <a href="cell.php?x=$i&y=0">Input</a></td>
-                <td>$i,1 - <a href="cell.php?x=$i&y=1">Input</a></td>
-                <td>$i,2 - <a href="cell.php?x=$i&y=2">Input</a></td>
-                <td>$i,3 - <a href="cell.php?x=$i&y=3">Input</a></td>
-                <td>$i,4 - <a href="cell.php?x=$i&y=4">Input</a></td>
-                <td>$i,5 - <a href="cell.php?x=$i&y=5">Input</a></td>
-                <td>$i,6 - <a href="cell.php?x=$i&y=6">Input</a></td>
-                <td>$i,7 - <a href="cell.php?x=$i&y=7">Input</a></td>
-                <td>$i,8 - <a href="cell.php?x=$i&y=8">Input</a></td>
-            </tr>
+  <tbody>
+   <tr> <td>1 <td>  <td>3 <td>6 <td>  <td>4 <td>7 <td>  <td>9
+   <tr> <td>  <td>2 <td>  <td>  <td>9 <td>  <td>  <td>1 <td>
+   <tr> <td>7 <td>  <td>  <td>  <td>  <td>  <td>  <td>  <td>6
 HTML;
         }
 
         $html .= <<<HTML
 </table>
-</div>
 HTML;
 
 

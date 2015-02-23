@@ -9,7 +9,6 @@ require 'format.inc.php';
 require 'lib/game.inc.php';
 $view = new SudokuView($sudoku);
 ?>
-<?php echo "welcome page"; ?>
 
 <!DOCTYPE html>
 <html>
