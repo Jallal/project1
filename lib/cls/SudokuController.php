@@ -14,9 +14,6 @@ class WumpusController
     private $reset = false;         // True if we need to reset the game
 
 
-
-
-
     public function __construct(SudokuModel $sudoku, $request) {
 
 

@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="d53f52b0-2dcf-4df7-befd-95b3438e2e82" name="Default" comment="tests and code for SudokuCell">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/Cell.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuController.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuController.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuView.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuView.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.php" afterPath="$PROJECT_DIR$/game.php" />
     </list>
@@ -36,21 +36,21 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="autoload.inc.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/autoload.inc.php">
+      <file leaf-file-name="SudokuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
-              <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
+            <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="765">
+              <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuController.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
+      <file leaf-file-name="Sudoku.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Sudoku.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.5416667" vertical-offset="149" max-vertical-offset="810">
-              <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="195">
+              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -79,12 +79,12 @@
       <file leaf-file-name="SudokuView.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.64557" vertical-offset="0" max-vertical-offset="915">
-              <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
+            <state vertical-scroll-proportion="-2.164557" vertical-offset="69" max-vertical-offset="825">
+              <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
               <folding>
-                <marker date="1424732744000" expanded="true" signature="419:459" placeholder="..." />
-                <marker date="1424732744000" expanded="true" signature="446:456" placeholder="..." />
-                <marker date="1424732744000" expanded="true" signature="548:1196" placeholder="..." />
+                <marker date="1424733319000" expanded="true" signature="417:457" placeholder="..." />
+                <marker date="1424733319000" expanded="true" signature="444:454" placeholder="..." />
+                <marker date="1424733319000" expanded="true" signature="546:1194" placeholder="..." />
               </folding>
             </state>
           </provider>
@@ -115,7 +115,7 @@
       <file leaf-file-name="SudokuCell.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="750">
+            <state vertical-scroll-proportion="-8.791667" vertical-offset="89" max-vertical-offset="750">
               <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
               <folding />
             </state>
@@ -125,8 +125,8 @@
       <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="615">
-              <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+            <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="615">
+              <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
               <folding />
             </state>
           </provider>
@@ -159,10 +159,10 @@
         <option value="$PROJECT_DIR$/lib/cls/SudokuCell.php" />
         <option value="$PROJECT_DIR$/tests/tests/SudokuCellTest.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuGame.php" />
-        <option value="$PROJECT_DIR$/lib/cls/SudokuController.php" />
         <option value="$PROJECT_DIR$/lib/game.inc.php" />
-        <option value="$PROJECT_DIR$/game.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuView.php" />
+        <option value="$PROJECT_DIR$/game.php" />
+        <option value="$PROJECT_DIR$/lib/cls/SudokuController.php" />
       </list>
     </option>
   </component>
@@ -378,7 +378,7 @@
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.20886981" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24573378" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
@@ -559,30 +559,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/selectcell.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="750">
-          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.5416667" vertical-offset="149" max-vertical-offset="810">
-          <caret line="19" column="51" selection-start-line="19" selection-start-column="51" selection-end-line="19" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/autoload.inc.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
@@ -601,10 +577,22 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuGame.php">
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="3825">
-          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
+        <state vertical-scroll-proportion="-2.164557" vertical-offset="69" max-vertical-offset="825">
+          <caret line="21" column="34" selection-start-line="21" selection-start-column="34" selection-end-line="21" selection-end-column="34" />
+          <folding>
+            <marker date="1424733319000" expanded="true" signature="417:457" placeholder="..." />
+            <marker date="1424733319000" expanded="true" signature="444:454" placeholder="..." />
+            <marker date="1424733319000" expanded="true" signature="546:1194" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/game.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-16.25" vertical-offset="0" max-vertical-offset="615">
+          <caret line="26" column="30" selection-start-line="26" selection-start-column="30" selection-end-line="26" selection-end-column="30" />
           <folding />
         </state>
       </provider>
@@ -617,23 +605,43 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/game.php">
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuGame.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.75" vertical-offset="0" max-vertical-offset="615">
-          <caret line="14" column="6" selection-start-line="14" selection-start-column="6" selection-end-line="14" selection-end-column="6" />
+        <state vertical-scroll-proportion="-15.0" vertical-offset="0" max-vertical-offset="3825">
+          <caret line="29" column="45" selection-start-line="29" selection-start-column="45" selection-end-line="29" selection-end-column="45" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-6.64557" vertical-offset="0" max-vertical-offset="915">
-          <caret line="40" column="53" selection-start-line="40" selection-start-column="53" selection-end-line="40" selection-end-column="53" />
-          <folding>
-            <marker date="1424732744000" expanded="true" signature="419:459" placeholder="..." />
-            <marker date="1424732744000" expanded="true" signature="446:456" placeholder="..." />
-            <marker date="1424732744000" expanded="true" signature="548:1196" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="-5.625" vertical-offset="0" max-vertical-offset="765">
+          <caret line="14" column="0" selection-start-line="14" selection-start-column="0" selection-end-line="14" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Sudoku.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="685">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cls/selectcell.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.875" vertical-offset="0" max-vertical-offset="135">
+          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.791667" vertical-offset="89" max-vertical-offset="750">
+          <caret line="25" column="0" selection-start-line="25" selection-start-column="0" selection-end-line="25" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
