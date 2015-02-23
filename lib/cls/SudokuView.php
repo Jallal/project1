@@ -15,8 +15,8 @@ class SudokuView {
      * Constructor
      * @param Wumpus $wumpus The Wumpus object
      */
-    public function __construct(SudokuModel $sudoku) {
-       // $this->sudoku = $suduku;
+    public function __construct(SudokuModel $sudokus) {
+       $this->sudoku = $sudokus;
     }
 
     public function presentCell($ndx) {
@@ -24,19 +24,30 @@ class SudokuView {
         $html = <<<HTML
 <div class="cells">
 <table border="1" style="width:100%">
-  <tr>
-    <td>Jill</td>
-    <td>Smith</td>
-    <td>50</td>
-  </tr>
-  <tr>
-    <td>Eve</td>
-    <td>Jackson</td>
-    <td>94</td>
-  </tr>
+
+
+HTML;
+        for ($i = 0; $i < 9; $i++) {
+            $html .= <<<HTML
+            <tr>
+                <td>$i,0 - <a href="someshit?x=$i&y=0">Input</a></td>
+                <td>$i,1 - <a href="someshit?x=$i&y=1">Input</a></td>
+                <td>$i,2 - <a href="someshit?x=$i&y=2">Input</a></td>
+                <td>$i,3 - <a href="someshit?x=$i&y=3">Input</a></td>
+                <td>$i,4 - <a href="someshit?x=$i&y=4">Input</a></td>
+                <td>$i,5 - <a href="someshit?x=$i&y=5">Input</a></td>
+                <td>$i,6 - <a href="someshit?x=$i&y=6">Input</a></td>
+                <td>$i,7 - <a href="someshit?x=$i&y=7">Input</a></td>
+                <td>$i,8 - <a href="someshit?x=$i&y=8">Input</a></td>
+            </tr>
+HTML;
+        }
+
+        $html .= <<<HTML
 </table>
 </div>
 HTML;
+
 
         return $html;
     }
