@@ -41,6 +41,10 @@ class SudokuModel {
         return $cell->isUserGuessCorrect();
     }
 
+    public function isUserGuessCorrect($row, $column) {
+        return $this->cells[$row][$column]->isUserGuessCorrect();
+    }
+
     public function getUserGuessForCell($row, $column) {
         return $this->cells[$row][$column]->getUserGuess();
     }
