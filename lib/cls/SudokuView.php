@@ -15,8 +15,8 @@ class SudokuView {
      * Constructor
      * @param Wumpus $wumpus The Wumpus object
      */
-    public function __construct(suduku $suduku) {
-        $this->sudoku = $suduku;
+    public function __construct(SudokuModel $sudoku) {
+       // $this->sudoku = $suduku;
     }
 
     public function presentCell($ndx) {

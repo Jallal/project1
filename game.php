@@ -5,8 +5,11 @@
  * Date: 2/12/15
  * Time: 5:04 PM
  */
+require 'format.inc.php';
+require 'lib/game.inc.php';
 $view = new SudokuView($sudoku);
 ?>
+<?php echo "welcome page"; ?>
 
 <!DOCTYPE html>
 <html>
@@ -16,14 +19,17 @@ $view = new SudokuView($sudoku);
     <link rel="stylesheet" href="Sudoku.css" />
 </head>
 
-<?php echo present_header("Sudoku"); ?>
+<body>
 
 
 <div class="cells">
     <?php
-    echo $view->presentCell(0);
+    //echo $view->presentCell(0);
     ?>
 </div>
+
+</body>
+</html>
 
 
 

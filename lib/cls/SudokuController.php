@@ -17,7 +17,7 @@ class WumpusController
 
 
 
-    public function __construct(sudoku $sudoku, $request) {
+    public function __construct(SudokuModel $sudoku, $request) {
 
 
     }
