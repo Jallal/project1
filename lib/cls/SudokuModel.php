@@ -5,16 +5,21 @@ class SudokuModel {
     private $answer;
     private $cells = array();
 
-    public function __construct() {
+    public function __construct($gameNum=-1) {
         $sudokuGame = new SudokuGame();
         $games = $sudokuGame->getGames();
         $answers = $sudokuGame->getAnswers();
 
-        $selection = rand(0,9);
-        $this->game = $games[$selection];
-        $this->answer = $answers[$selection];
+        if ($gameNum == -1) {
+            $selection = rand(0,9);
+            $this->game = $games[$selection];
+            $this->answer = $answers[$selection];
 
-        $this->constructCells();
+            $this->constructCells();
+        } else {
+            $this->game = $games[$gameNum];
+            $this->answer = $answers[$gameNum];
+        }
     }
 
     private function constructCells() {
