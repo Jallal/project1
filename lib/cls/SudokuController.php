@@ -16,7 +16,11 @@ class WumpusController
 
     public function __construct(SudokuModel $sudoku, $request) {
 
+        if(isset($request['n'])){
+            //new game
+            $this->reset = true;
 
+        }
     }
 
     public function getPage(){

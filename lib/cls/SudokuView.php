@@ -17,6 +17,8 @@ class SudokuView {
      */
     public function __construct(SudokuModel $sudokus) {
        $this->sudoku = $sudokus;
+
+
     }
 
     public function presentStatus() {
