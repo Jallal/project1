@@ -252,4 +252,12 @@ class SudokuGame {
             array(3, 4, 8, 5, 7, 9, 1, 6, 2)
         );
     }
+
+    public function getGames() {
+        return $this->games;
+    }
+
+    public function getAnswers() {
+        return $this->answers;
+    }
 }

@@ -47,4 +47,8 @@ class SudokuCell {
     public function getUserGuess() {
         return $this->userGuess;
     }
+
+    public function isUserGuessCorrect() {
+        return ($this->answer === $this->userGuess);
+    }
 }
