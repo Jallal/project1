@@ -19,24 +19,7 @@ class SudokuView {
         $this->sudoku = $suduku;
     }
 
-
-    /** Generate the HTML for the number of arrows remaining */
-    public function presentArrows() {
-        $a = $this->wumpus->numArrows();
-        return "<p>You have $a arrows remaining.</p>";
-    }
-
-
-    /** Present the links for a room
-     * @param $ndx An index 0 to 2 for the three rooms */
-    /** Present the links for a room
-     * @param $ndx An index 0 to 2 for the three rooms */
     public function presentCell($ndx) {
-        //$room = $this->wumpus->getCurrent()->getNeighbors()[$ndx];
-        //$roomnum = $room->getNum();
-        //$roomndx = $room->getNdx();
-        //$roomurl = "game-post.php?m=$roomndx";
-        //$shooturl = "game-post.php?s=$roomndx";
 
         $html = <<<HTML
 <div class="cells">

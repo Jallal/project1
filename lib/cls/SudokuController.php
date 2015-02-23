@@ -18,18 +18,7 @@ class WumpusController
 
 
     public function __construct(sudoku $sudoku, $request) {
-        //$this->wumpus = $wumpus;
 
-       /* if(isset($request['c'])){
-            $this->cheatMode = true;
-        } else if(isset($request['m'])) {
-            $this->move($request['m']);
-        } else if(isset($request['s'])) {
-            $this->shoot($request['s']);
-        } else if(isset($request['n'])) {
-            // New game!
-            $this->reset = true;
-        }*/
 
     }
 
@@ -42,47 +31,22 @@ class WumpusController
 
     }
 
-
-
     /** Move request
-     * @param $ndx Index for room to move to */
+     * @param $ndx Index of the cell in the sudoku */
     private function insert_into_cell($ndx) {
-        // Simple error check
-        /*if(!is_numeric($ndx) || $ndx < 1 || $ndx > Wumpus::NUM_ROOMS) {
-            return;
-        }
 
-        switch($this->wumpus->move($ndx)) {
-            case Wumpus::HAPPY:
-                break;
-
-            case Wumpus::EATEN:
-            case Wumpus::FELL:
-                $this->reset = true;
-                $this->page = 'lose.php';
-                break;
-        }*/
     }
 
 
-
+/** Move request
+* @param $ndx Index of the cell in the sudoku */
     private function check_status($ndx)
     {
 
-        /*switch($this->wumpus->shoot($ndx)) {
-            case Wumpus::WUMPUS:
-                $this->reset = true;
-                $this->page = 'win.php';
-                break;
-
-
-        }
-        if($this->wumpus->numArrows()===0){
-            $this->reset = true;
-            $this->page = 'lose.php';
-
-    }*/
     }
+
+    /** Move request
+     * @param $ndx Index of the cell in to show the hint in */
     private function hint($ndx)
     {
 
