@@ -23,7 +23,7 @@ $view = new SudokuView($sudoku);
 
 <div class="cells">
     <?php
-    echo $view->presentCell(0);
+    echo $view->presentStatus();
     ?>
 </div>
 

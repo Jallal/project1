@@ -17,9 +17,11 @@ class SudokuView {
      */
     public function __construct(SudokuModel $sudokus) {
        $this->sudoku = $sudokus;
+
+
     }
 
-    public function presentCell($ndx) {
+    public function presentStatus() {
 
         $html = <<<HTML
 <table>
@@ -46,10 +48,4 @@ HTML;
         return $html;
     }
 
-
-
-    public function presentStatus()
-    {
-
-    }
 }

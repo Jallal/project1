@@ -19,14 +19,17 @@ class SudokuModel {
         } else {
             $this->game = $games[$gameNum];
             $this->answer = $answers[$gameNum];
+
+            $this->constructCells();
         }
     }
 
-    private function constructCells() {
-        for($row = 0; $row < 9; $row++) {
+    private function constructCells()
+    {
+        for ($row = 0; $row < 9; $row++) {
             $oneRow = array();
-            for($column = 0; $column < 9; $column++) {
-                $oneRow[] = new SudokuCell($this->answer[$row][$column], $row, $column);
+            for ($column = 0; $column < 9; $column++) {
+                $oneRow[] = new SudokuCell($this->answer[$row][$column], $row, $column, $this->game[$row][$column]);
             }
             $this->cells[] = $oneRow;
         }
