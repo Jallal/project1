@@ -10,7 +10,7 @@
 require __DIR__ . "/autoload.inc.php";
 // Start the PHP session system
 session_start();
-define("SUDOKU_SESSION", 'Sudoku');
+define("SUDOKU_SESSION", 'sudoku');
 
 
 if(!isset($_SESSION[SUDOKU_SESSION])){
