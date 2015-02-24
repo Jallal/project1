@@ -1,6 +1,6 @@
 <?php
 
-class SudokuModel {
+class SudokuModel{
     private $game;
     private $answer;
     private $cells = array();
