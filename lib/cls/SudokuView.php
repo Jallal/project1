@@ -36,18 +36,19 @@ HTML;
             }
             $html .= <<<HTML
    <tr>
-   <td>{$sudo->getDefaultValue($i,0)}
-   <td>{$sudo->getDefaultValue($i,1)}
-   <td>{$sudo->getDefaultValue($i,2)}
-   <td>{$sudo->getDefaultValue($i,3)}
-   <td>{$sudo->getDefaultValue($i,4)}
-   <td>{$sudo->getDefaultValue($i,5)}
-   <td>{$sudo->getDefaultValue($i,6)}
-   <td>{$sudo->getDefaultValue($i,7)}
-   <td>{$sudo->getDefaultValue($i,8)}
+   <td><a href="cell.php?x=$i&y=0">{$sudo->getDefaultValue($i,0)}</a>
+   <td><a href="cell.php?x=$i&y=1">{$sudo->getDefaultValue($i,1)}</a>
+   <td><a href="cell.php?x=$i&y=2">{$sudo->getDefaultValue($i,2)}</a>
+   <td><a href="cell.php?x=$i&y=3">{$sudo->getDefaultValue($i,3)}</a>
+   <td><a href="cell.php?x=$i&y=4">{$sudo->getDefaultValue($i,4)}</a>
+   <td><a href="cell.php?x=$i&y=5">{$sudo->getDefaultValue($i,5)}</a>
+   <td><a href="cell.php?x=$i&y=6">{$sudo->getDefaultValue($i,6)}</a>
+   <td><a href="cell.php?x=$i&y=7">{$sudo->getDefaultValue($i,7)}</a>
+   <td><a href="cell.php?x=$i&y=8">{$sudo->getDefaultValue($i,8)}</a>
 
 HTML;
         }
+
 
         $html .= <<<HTML
 </table>
