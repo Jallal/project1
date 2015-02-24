@@ -15,10 +15,13 @@ class WumpusController
 
 
     public function __construct(SudokuModel $sudoku, $request) {
+        $this->sudoku = $sudoku;
 
         if(isset($request['n'])){
             //new game
             $this->reset = true;
+        }
+        elseif(isset($request['f'])){
 
         }
     }
@@ -34,7 +37,9 @@ class WumpusController
 
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-    private function insert_into_cell($ndx) {
+    private function insert_into_cell($ndxX,$ndxY, $value) {
+
+
 
     }
 
@@ -50,6 +55,19 @@ class WumpusController
      * @param $ndx Index of the cell in to show the hint in */
     private function hint($ndx)
     {
+
+    }
+
+    private function giveup()
+    {
+        $this->reset = true;
+        $this->page = 'giveup.php';
+
+    }
+    private function won()
+    {
+        $this->reset = true;
+        $this->page = 'win.php';
 
     }
 }

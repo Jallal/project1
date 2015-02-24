@@ -24,7 +24,7 @@ $view = new SudokuView($sudoku);
 
 <div class="cells">
     <?php
-    echo $view->presentStatus();
+    echo $view->presentCell();
     ?>
 </div>
 

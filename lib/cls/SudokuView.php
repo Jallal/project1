@@ -20,7 +20,7 @@ class SudokuView {
     }
 
     public function presentStatus() {
-
+        $sudo = new SudokuModel();
 
         $html = <<<HTML
 <table>
@@ -30,14 +30,25 @@ class SudokuView {
   <colgroup><col><col><col>
   <tbody>
 HTML;
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 9; $i++) {
+            if ($i % 3 == 0) {
+                $html .= '<tbody>';
+            }
             $html .= <<<HTML
-  <tbody>
-   <tr> <td>1 <td>  <td>3 <td>6 <td>  <td>4 <td>7 <td>  <td>9
-   <tr> <td>  <td>2 <td>  <td>  <td>9 <td>  <td>  <td>1 <td>
-   <tr> <td>7 <td>  <td>  <td>  <td>  <td>  <td>  <td>  <td>6
+   <tr>
+   <td><a href="cell.php?x=$i&y=0">{$sudo->getDefaultValue($i,0)}</a>
+   <td><a href="cell.php?x=$i&y=1">{$sudo->getDefaultValue($i,1)}</a>
+   <td><a href="cell.php?x=$i&y=2">{$sudo->getDefaultValue($i,2)}</a>
+   <td><a href="cell.php?x=$i&y=3">{$sudo->getDefaultValue($i,3)}</a>
+   <td><a href="cell.php?x=$i&y=4">{$sudo->getDefaultValue($i,4)}</a>
+   <td><a href="cell.php?x=$i&y=5">{$sudo->getDefaultValue($i,5)}</a>
+   <td><a href="cell.php?x=$i&y=6">{$sudo->getDefaultValue($i,6)}</a>
+   <td><a href="cell.php?x=$i&y=7">{$sudo->getDefaultValue($i,7)}</a>
+   <td><a href="cell.php?x=$i&y=8">{$sudo->getDefaultValue($i,8)}</a>
+
 HTML;
         }
+
 
         $html .= <<<HTML
 </table>
