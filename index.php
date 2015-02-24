@@ -11,12 +11,12 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Project 1 Checkpoint Home</title>
+<title>Project 1 Sudoku HOME</title>
 </head>
 
 <body>
 Welcome!<br>
-<a href="checkpoint.html">Checkpoint</a>
+<a href="game.php">Play Sudoku</a>
 </body>
 
 </html>
