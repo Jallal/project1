@@ -13,11 +13,13 @@ class SudokuCell {
     private $notes = array();  // Notes of possible answers for the cell
     private $row;              // Row index for the cell 0-8
     private $column;           // Column index for the cell 0-8
+    private $defaultValue;
 
-    public function __construct($answer, $row, $column) {
+    public function __construct($answer, $row, $column, $defaultValue) {
         $this->answer = $answer;
         $this->row = $row;
         $this->column = $column;
+        $this->defaultValue = $defaultValue;
     }
 
     public function getAnswer() {

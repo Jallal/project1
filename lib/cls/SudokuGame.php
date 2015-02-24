@@ -11,7 +11,7 @@ class SudokuGame {
     private $answers = array(); // array of answers, 10 in total
 
 
-    public function __contruct() {
+    public function __construct() {
         $this->games[] = array(                // game 1
             array(0, 0, 0, 9, 0, 0, 0, 0, 0),
             array(7, 0, 1, 0, 0, 3, 5, 6, 0),

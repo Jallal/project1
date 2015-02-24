@@ -6,27 +6,27 @@
 class SudokuCellTest extends \PHPUnit_Framework_TestCase
 {
 	public function test_construct() {
-		$cell = new SudokuCell(7, 0, 0);
+		$cell = new SudokuCell(7, 0, 0, 0);
 		$this->assertInstanceOf("SudokuCell", $cell);
 	}
 
 	public function test_getAnswer() {
-		$cell = new SudokuCell(5, 0, 0);
+		$cell = new SudokuCell(5, 0, 0, 0);
 		$this->assertEquals(5, $cell->getAnswer());
 	}
 
 	public function test_getRow() {
-		$cell = new SudokuCell(7, 3, 8);
+		$cell = new SudokuCell(7, 3, 8, 0);
 		$this->assertEquals(3, $cell->getRow());
 	}
 
 	public function test_getColumn() {
-		$cell = new SudokuCell(4, 3, 8);
+		$cell = new SudokuCell(4, 3, 8, 0);
 		$this->assertEquals(8, $cell->getColumn());
 	}
 
 	public function test_addNote() {
-		$cell = new SudokuCell(1, 2, 3);
+		$cell = new SudokuCell(1, 2, 3, 0);
 
 		$cell->addNote(2);
 		$cell->addNote(1);
@@ -40,7 +40,7 @@ class SudokuCellTest extends \PHPUnit_Framework_TestCase
 	}
 
 	public function test_setUserGuess() {
-		$cell = new SudokuCell(1, 2, 3);
+		$cell = new SudokuCell(1, 2, 3, 0);
 
 		$cell->setUserGuess(4);
 
