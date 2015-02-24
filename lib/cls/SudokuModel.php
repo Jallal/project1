@@ -16,6 +16,11 @@ class SudokuModel{
             $this->answer = $answers[$selection];
 
             $this->constructCells();
+        } elseif($gameNum == 11) {
+            $this->game = $sudokuGame->getCheatGame();
+            $this->answer = $sudokuGame->getCheatAnswer();
+
+            $this->constructCells();
         } else {
             $this->game = $games[$gameNum];
             $this->answer = $answers[$gameNum];
