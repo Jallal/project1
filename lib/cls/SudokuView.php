@@ -19,7 +19,7 @@ class SudokuView {
        $this->sudoku = $sudoku;
     }
 
-    public function presentCell() {
+    public function presentStatus() {
 
 
         $html = <<<HTML
@@ -48,9 +48,4 @@ HTML;
     }
 
 
-
-    public function presentStatus()
-    {
-
-    }
 }
