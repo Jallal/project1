@@ -9,6 +9,8 @@
 class SudokuGame {
     private $games = array();   // array of games, 10 in total
     private $answers = array(); // array of answers, 10 in total
+    private $cheatGame;  // the cheat game
+    private $cheatAnswer;  // answer for the cheat game
 
 
     public function __construct() {
@@ -252,7 +254,7 @@ class SudokuGame {
             array(3, 4, 8, 5, 7, 9, 1, 6, 2)
         );
 
-        $this->games[] = array(                // game 11, the cheat game
+        $this->cheatGame = array(                // the cheat game
             array(0, 0, 0, 0, 5, 0, 0, 1, 9),
             array(0, 0, 0, 0, 2, 0, 6, 3, 5),
             array(0, 0, 9, 1, 0, 0, 7, 0, 0),
@@ -264,7 +266,7 @@ class SudokuGame {
             array(3, 7, 0, 0, 8, 0, 0, 0, 0)
         );
 
-        $this->answers[] = array(               // answer 11, the cheat answer
+        $this->cheatAnswer = array(               // the answer for the cheat game
             array(2, 6, 3, 7, 5, 8, 4, 1, 9),
             array(8, 1, 7, 4, 2, 9, 6, 3, 5),
             array(5, 4, 9, 1, 6, 3, 7, 8, 2),
@@ -281,7 +283,15 @@ class SudokuGame {
         return $this->games;
     }
 
+    public function getCheatGame() {
+        return $this->cheatGame;
+    }
+
     public function getAnswers() {
         return $this->answers;
+    }
+
+    public function getCheatAnswer() {
+        return $this->cheatAnswer;
     }
 }
