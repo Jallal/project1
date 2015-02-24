@@ -26,6 +26,10 @@ class SudokuCell {
         return $this->answer;
     }
 
+    public function getDefaultValue() {
+        return $this->defaultValue;
+    }
+
     public function getRow() {
         return $this->row;
     }
