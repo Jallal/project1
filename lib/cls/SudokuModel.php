@@ -35,6 +35,10 @@ class SudokuModel {
         }
     }
 
+    public function getDefaultValue($row, $column) {
+        return $this->cells[$row][$column]->getDefaultValue();
+    }
+
     public function getCell($row, $column) {
         return $this->cells[$row][$column];
     }
