@@ -20,7 +20,7 @@ class SudokuView {
     }
 
     public function presentStatus() {
-
+        $sudo = new SudokuModel();
 
         $html = <<<HTML
 <table>
@@ -30,12 +30,22 @@ class SudokuView {
   <colgroup><col><col><col>
   <tbody>
 HTML;
-        for ($i = 0; $i < 3; $i++) {
+        for ($i = 0; $i < 9; $i++) {
+            if ($i % 3 == 0) {
+                $html .= '<tbody>';
+            }
             $html .= <<<HTML
-  <tbody>
-   <tr> <td>1 <td>  <td>3 <td>6 <td>  <td>4 <td>7 <td>  <td>9
-   <tr> <td>  <td>2 <td>  <td>  <td>9 <td>  <td>  <td>1 <td>
-   <tr> <td>7 <td>  <td>  <td>  <td>  <td>  <td>  <td>  <td>6
+   <tr>
+   <td>{$sudo->getDefaultValue($i,0)}
+   <td>{$sudo->getDefaultValue($i,1)}
+   <td>{$sudo->getDefaultValue($i,2)}
+   <td>{$sudo->getDefaultValue($i,3)}
+   <td>{$sudo->getDefaultValue($i,4)}
+   <td>{$sudo->getDefaultValue($i,5)}
+   <td>{$sudo->getDefaultValue($i,6)}
+   <td>{$sudo->getDefaultValue($i,7)}
+   <td>{$sudo->getDefaultValue($i,8)}
+
 HTML;
         }
 
