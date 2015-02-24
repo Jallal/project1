@@ -15,13 +15,12 @@ class SudokuView {
      * Constructor
      * @param Wumpus $wumpus The Wumpus object
      */
-    public function __construct(SudokuModel $sudokus) {
-       $this->sudoku = $sudokus;
-
-
+    public function __construct(SudokuModel $sudoku) {
+       $this->sudoku = $sudoku;
     }
 
-    public function presentStatus() {
+    public function presentCell() {
+
 
         $html = <<<HTML
 <table>
@@ -48,4 +47,10 @@ HTML;
         return $html;
     }
 
+
+
+    public function presentStatus()
+    {
+
+    }
 }
