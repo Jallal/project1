@@ -16,7 +16,7 @@
 
 <body>
 Welcome!<br>
-<a href="game.php">Play Sudoku</a>
+<a href="game-post.php?n">Play Sudoku</a>
 </body>
 
 </html>

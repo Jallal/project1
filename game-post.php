@@ -7,8 +7,8 @@
  */
 
 require 'lib/game.inc.php';
-$controller = new SudokuController($sudoku, $_REQUEST);
 
+$controller = new SudokuController($sudoku, $_REQUEST);
 
 if($controller->isReset()) {
     unset($_SESSION[SUDOKU_SESSION]);

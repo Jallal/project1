@@ -14,7 +14,7 @@ define("SUDOKU_SESSION", 'sudoku');
 
 
 if(!isset($_SESSION[SUDOKU_SESSION])){
-    $_SESSION[SUDOKU_SESSION] = new SudokuModel();   // Seed: 1422668587
+    $_SESSION[SUDOKU_SESSION] = new SudokuModel(0);   //
 
 }
 
