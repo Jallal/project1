@@ -40,6 +40,7 @@ class SudokuModel{
         }
     }
 
+
     public function getDefaultValue($row, $column) {
         return $this->cells[$row][$column]->getDefaultValue();
     }

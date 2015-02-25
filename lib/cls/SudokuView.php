@@ -15,10 +15,12 @@ class SudokuView {
     public function __construct(SudokuModel  $sudoku) {
        $this->sudoku = $sudoku;
 
-
     }
 
-    public function presentStatus() {
+
+    public function updatedStatus() {
+
+
 
         $html = <<<HTML
 <table>
@@ -54,6 +56,24 @@ HTML;
 
 
         return $html;
+    }
+
+
+    public function showMeNotes($row,$column)
+    {
+        if(sizeof($this->sudoku->getNotesForCell($row,$column))){
+
+            $notes = $this->sudoku->getNotesForCell($row,$column);
+
+            foreach($notes as $key=>$value)
+            {
+
+                echo " ".$value;
+
+            }
+
+        }
+
     }
 
 

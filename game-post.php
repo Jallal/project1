@@ -14,6 +14,11 @@ if($controller->isReset()) {
     unset($_SESSION[SUDOKU_SESSION]);
 }
 
+elseif($controller->ischeatMode()){
+    $_SESSION[SUDOKU_SESSION] = new SudokuModel(11);
+
+}
+
 //echo"<p>" .$controller->getPage()."</p>";
 header('Location: ' . $controller->getPage());
 

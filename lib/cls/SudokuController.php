@@ -9,78 +9,85 @@
 class SudokuController{
 
     private $sudoku;                // The Wumpus object we are controlling
-    private $page = 'game.php';     // The next page we will go to
-    private $reset = false;         // True if we need to reset the game
-
+    private $page ='game.php';     // The next page we will go to
+    private $reset = false;
+    private $cheatmode = false;
 
     public function __construct($sudoku, $request) {
-        $this->sudoku = $sudoku;
 
-        //$this->insert_into_cell($request['x'], $request['y'],$request['cell_value']);
+            $this->sudoku = $sudoku;
 
-        var_dump("*********%%%%%%%%%%%%%%%%**************");
-        var_dump(isset($request['x']));
-        var_dump(isset($request['y']));
-        var_dump(isset($request['cell_value']));
+        if(isset($request['c'])){
+            //activate the cheat mode
+            $this->cheatmode = true;
+        }
 
-        var_dump("*********%%%%%%%%%%%%%%%%**************");
-
-
-        if(isset($request['n'])){
+        elseif(isset($request['submit_button'])) {
+                $row = $request['x'];
+                $column = $request['y'];
+                $guess = $request['cell_value'];
+                $this->insert_into_cell($row, $column, $guess);
+        }
+        elseif(isset($request['note_button'])){
+                $row = $request['x'];
+                $column = $request['y'];
+                $note = $request['cell_note'];
+                $this->hint($note,$row, $column);
+            }
+        elseif(isset($request['n'])){
             //new game
             $this->reset = true;
         }
-        elseif(isset($request['cell_value'])){
 
-          $this->insert_into_cell(0,0,cell_value);
+        elseif(isset($request['gaveup'])){
+            //activate the cheat mode
+            $this->giveup();
         }
+
+
     }
 
-
-
     public function getPage(){
-
-        var_dump("***********************");
         return $this->page;
-
     }
     public function isReset(){
         return $this->reset;
 
     }
 
+    public function IscheatMode(){
+
+       $this->cheatmode;
+    }
+
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-    private function insert_into_cell($row, $column,$value) {
+    private function insert_into_cell($row, $column,$guess) {
 
-        var_dump($row);
-        var_dump($column);
-        var_dump($value);
-
-        if($this->sudoku->isUserGuessCorrect($row, $column)===$value)
-        {
-            return   $this->sudoku->getUserGuessForCell($value, $row, $column);
-        }
-        else
-        {
-           echo 'wrong answar';
-
+        if($this->sudoku->getAnswerForCell($row, $column)==$guess){
+            $this->sudoku->setUserGuessForCell($guess, $row, $column);
         }
 
+        if($this->check_status()){
+            $this->won();
+        }
     }
 
 
 /** Move request
 * @param $ndx Index of the cell in the sudoku */
-    private function check_status($ndx)
+    private function check_status()
     {
+
+        return false;
 
     }
 
     /** Move request
      * @param $ndx Index of the cell in to show the hint in */
-    private function hint($ndx)
+    private function hint($note,$row, $column)
     {
+        $this->sudoku->addNoteForCell($note, $row, $column);
 
     }
 

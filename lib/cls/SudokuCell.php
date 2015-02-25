@@ -15,12 +15,15 @@ class SudokuCell {
     private $column;           // Column index for the cell 0-8
     private $defaultValue;
 
+    private $currentValue;
+
     public function __construct($answer, $row, $column, $defaultValue) {
         $this->answer = $answer;
         $this->row = $row;
         $this->column = $column;
         $this->defaultValue = $defaultValue;
     }
+
 
     public function getAnswer() {
         return $this->answer;
@@ -47,7 +50,7 @@ class SudokuCell {
     }
 
     public function setUserGuess($guess) {
-        $this->userGuess = $guess;
+        $this->defaultValue = $guess;
     }
 
     public function getUserGuess() {
@@ -57,4 +60,5 @@ class SudokuCell {
     public function isUserGuessCorrect() {
         return ($this->answer === $this->userGuess);
     }
+
 }
