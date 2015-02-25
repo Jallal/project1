@@ -34,9 +34,74 @@ class SudokuModelTest extends \PHPUnit_Framework_TestCase
 
 	public function test_setUserGuessForCell() {
 		$sudoku = new SudokuModel(0);
-		$sudoku->setUserGuessForCell(3, 0, 0);
 
+		$this->assertFalse($sudoku->setUserGuessForCell(3, 0, 0));
 		$this->assertEquals(3, $sudoku->getUserGuessForCell(0,0));
+	}
+
+	public function test_checkForWin() {
+		$sudoku = new SudokuModel(11);
+
+		$sudoku->setUserGuessForCell(2, 0, 0);
+		$sudoku->setUserGuessForCell(6, 0, 1);
+		$sudoku->setUserGuessForCell(3, 0, 2);
+		$sudoku->setUserGuessForCell(7, 0, 3);
+		$sudoku->setUserGuessForCell(8, 0, 5);
+		$sudoku->setUserGuessForCell(4, 0, 6);
+
+		$sudoku->setUserGuessForCell(8, 1, 0);
+		$sudoku->setUserGuessForCell(1, 1, 1);
+		$sudoku->setUserGuessForCell(7, 1, 2);
+		$sudoku->setUserGuessForCell(4, 1, 3);
+		$sudoku->setUserGuessForCell(9, 1, 5);
+
+		$sudoku->setUserGuessForCell(5, 2, 0);
+		$sudoku->setUserGuessForCell(4, 2, 1);
+		$sudoku->setUserGuessForCell(6, 2, 4);
+		$sudoku->setUserGuessForCell(3, 2, 5);
+		$sudoku->setUserGuessForCell(8, 2, 7);
+		$sudoku->setUserGuessForCell(2, 2, 8);
+
+		$sudoku->setUserGuessForCell(7, 3, 0);
+		$sudoku->setUserGuessForCell(3, 3, 1);
+		$sudoku->setUserGuessForCell(5, 3, 3);
+		$sudoku->setUserGuessForCell(2, 3, 5);
+		$sudoku->setUserGuessForCell(6, 3, 7);
+
+		$sudoku->setUserGuessForCell(9, 4, 1);
+		$sudoku->setUserGuessForCell(4, 4, 2);
+		$sudoku->setUserGuessForCell(8, 4, 3);
+		$sudoku->setUserGuessForCell(3, 4, 4);
+		$sudoku->setUserGuessForCell(1, 4, 5);
+		$sudoku->setUserGuessForCell(2, 4, 6);
+		$sudoku->setUserGuessForCell(5, 4, 7);
+
+		$sudoku->setUserGuessForCell(2, 5, 1);
+		$sudoku->setUserGuessForCell(6, 5, 3);
+		$sudoku->setUserGuessForCell(7, 5, 5);
+		$sudoku->setUserGuessForCell(4, 5, 7);
+		$sudoku->setUserGuessForCell(3, 5, 8);
+
+		$sudoku->setUserGuessForCell(9, 6, 0);
+		$sudoku->setUserGuessForCell(8, 6, 1);
+		$sudoku->setUserGuessForCell(3, 6, 3);
+		$sudoku->setUserGuessForCell(7, 6, 4);
+		$sudoku->setUserGuessForCell(2, 6, 7);
+		$sudoku->setUserGuessForCell(4, 6, 8);
+
+		$sudoku->setUserGuessForCell(9, 7, 3);
+		$sudoku->setUserGuessForCell(6, 7, 5);
+		$sudoku->setUserGuessForCell(3, 7, 6);
+		$sudoku->setUserGuessForCell(7, 7, 7);
+		$sudoku->setUserGuessForCell(8, 7, 8);
+
+		$sudoku->setUserGuessForCell(1, 8, 2);
+		$sudoku->setUserGuessForCell(2, 8, 3);
+		$sudoku->setUserGuessForCell(4, 8, 5);
+		$sudoku->setUserGuessForCell(5, 8, 6);
+		$sudoku->setUserGuessForCell(9, 8, 7);
+
+		$this->assertTrue($sudoku->setUserGuessForCell(6, 8, 8));
 	}
 
 	public function test_isUserGuessCorrect() {

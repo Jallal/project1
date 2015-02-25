@@ -55,7 +55,18 @@ class SudokuModel {
     public function setUserGuessForCell($guess, $row, $column) {
         $cell = $this->cells[$row][$column];
         $cell->setUserGuess($guess);
-        return $cell->isUserGuessCorrect();
+        $this->game[$row][$column] = $guess;
+        return $this->checkForWin();
+    }
+
+    private function checkForWin() {
+        for ($row = 0; $row < 9; $row++) {
+            if (!($this->game[$row] === $this->answer[$row])) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public function isUserGuessCorrect($row, $column) {
