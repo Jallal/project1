@@ -12,6 +12,7 @@ class SudokuController {
     private $page ='game.php';     // The next page we will go to
     private $reset = false;
     private $cheatmode = false;
+    private $guessesCount;
 
     public function __construct($sudoku, $request) {
 
@@ -35,6 +36,7 @@ class SudokuController {
             }
         elseif(isset($request['n'])){
             //new game
+            $this->guessesCount = 0;
             $this->reset = true;
         }
 
@@ -63,6 +65,7 @@ class SudokuController {
      * @param $ndx Index of the cell in the sudoku */
     public function insert_into_cell($row, $column,$guess) {
 
+        $this->guessesCount = $this->guessesCount+1;
         if($this->sudoku->getAnswerForCell($row, $column)==$guess){
 
             if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
@@ -93,4 +96,9 @@ class SudokuController {
         $this->page = 'win.php';
 
     }
+
+    public  function count_the_guesses(){
+
+     return $this->guessesCount;
+}
 }

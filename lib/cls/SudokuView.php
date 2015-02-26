@@ -50,12 +50,20 @@ HTML;
         }
 
 
+
+
         $html .= <<<HTML
 </table>
 HTML;
 
 
         return $html;
+    }
+
+
+    public function numberOfGuesses(){
+
+        return $this->numberOfGuesses();
     }
 
 
