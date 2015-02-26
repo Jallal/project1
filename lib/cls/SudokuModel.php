@@ -85,6 +85,10 @@ class SudokuModel{
         $this->numNotes++;
     }
 
+    public function getNumNotes() {
+        return $this->numNotes;
+    }
+
     public function getNotesForCell($row, $column) {
         return $this->cells[$row][$column]->getNotes();
     }

@@ -69,6 +69,8 @@ HTML;
         }
 
 
+
+
         $html .= <<<HTML
 </table>
 HTML;
@@ -112,6 +114,12 @@ HTML;
 
 
         return $html;
+    }
+
+
+    public function numberOfGuesses(){
+
+        return $this->numberOfGuesses();
     }
 
 

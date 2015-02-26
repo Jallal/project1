@@ -119,6 +119,14 @@ class SudokuModelTest extends \PHPUnit_Framework_TestCase
 
 		$this->assertTrue(in_array(7, $notes));
 	}
+
+	public function test_getNumNotes() {
+		$sudoku = new SudokuModel(0);
+		$this->assertEquals(0, $sudoku->getNumNotes());
+
+		$sudoku->addNoteForCell(3, 0, 0);
+		$this->assertEquals(1, $sudoku->getNumNotes());
+	}
 }
 
 /// @endcond

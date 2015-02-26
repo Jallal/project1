@@ -1,20 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="d53f52b0-2dcf-4df7-befd-95b3438e2e82" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/Cell.php" afterPath="$PROJECT_DIR$/cell.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Sudoku.css" afterPath="$PROJECT_DIR$/Sudoku.css" />
+    <list default="true" id="f59dcad7-a297-4135-9ea3-92512ef30adf" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuCell.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuCell.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuController.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuModel.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuModel.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/tests/tests/SudokuModelTest.php" afterPath="$PROJECT_DIR$/tests/tests/SudokuModelTest.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/cls/SudokuView.php" afterPath="$PROJECT_DIR$/lib/cls/SudokuView.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/deployment.xml" afterPath="$PROJECT_DIR$/.idea/deployment.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/lib/game.inc.php" afterPath="$PROJECT_DIR$/lib/game.inc.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/game.php" afterPath="$PROJECT_DIR$/game.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.php" afterPath="$PROJECT_DIR$/index.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="project1.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path=".idea/dataSources.local.xml" />
-    <ignored path=".idea/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -29,32 +26,26 @@
   <component name="DaemonCodeAnalyzer">
     <disable_hints />
   </component>
-  <component name="DatabaseView">
-    <option name="FLATTEN" value="false" />
-    <option name="GROUP_BY_TYPE" value="true" />
-    <option name="SORT_CHILDREN" value="false" />
-    <option name="SHOW_TABLE_CONSTRAINTS" value="true" />
-  </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
     <favorites_list name="project1" />
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/game.php">
+      <file leaf-file-name="format.inc.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/format.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-13.125" vertical-offset="30" max-vertical-offset="645">
-              <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
+              <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="game.inc.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="game.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/game.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="816">
+            <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
               <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
               <folding />
             </state>
@@ -64,63 +55,59 @@
       <file leaf-file-name="autoload.inc.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/lib/autoload.inc.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
+            <state vertical-scroll-proportion="0.0" vertical-offset="165" max-vertical-offset="255">
               <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuView.php" pinned="false" current-in-tab="false">
+      <file leaf-file-name="SudokuView.php" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-33.125" vertical-offset="0" max-vertical-offset="2670">
-              <caret line="58" column="72" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
+            <state vertical-scroll-proportion="2.3801653" vertical-offset="0" max-vertical-offset="2790">
+              <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
               <folding>
-                <marker date="1424980218000" expanded="true" signature="326:420" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="339:357" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="367:385" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="395:420" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1511:1680" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1784:1813" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1784:1948" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1867:1885" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1895:1913" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="1923:1948" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2109:2749" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2117:2184" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2188:2255" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2259:2326" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2330:2397" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2401:2468" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2472:2539" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2543:2610" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="2614:2681" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3296:3427" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3346:3364" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3374:3392" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3402:3427" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3588:4300" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3596:3671" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3675:3750" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3754:3829" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3833:3908" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3912:3987" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="3991:4066" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="4070:4145" placeholder="..." />
-                <marker date="1424980218000" expanded="true" signature="4149:4224" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="326:420" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="339:357" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="367:385" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="395:420" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="1786:1950" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="1869:1887" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="1897:1915" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="1925:1950" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2111:2751" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2119:2186" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2190:2257" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2261:2328" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2332:2399" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2403:2470" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2474:2541" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2545:2612" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="2616:2683" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3387:3518" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3437:3455" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3465:3483" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3493:3518" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3679:4391" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3687:3762" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3766:3841" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3845:3920" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="3924:3999" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="4003:4078" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="4082:4157" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="4161:4236" placeholder="..." />
+                <marker date="1424980402000" expanded="true" signature="4240:4315" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuModel.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cls/SudokuModel.php">
+      <file leaf-file-name="game.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/game.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-17.625" vertical-offset="687" max-vertical-offset="1440">
-              <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="645">
+              <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -129,11 +116,9 @@
       <file leaf-file-name="cell.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/cell.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="585">
-              <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-              <folding>
-                <element signature="e#6#89#0#PHP" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
+              <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -141,8 +126,8 @@
       <file leaf-file-name="index.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/index.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.658228" vertical-offset="0" max-vertical-offset="375">
-              <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+              <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -151,18 +136,18 @@
       <file leaf-file-name="checkpoint.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/checkpoint.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-9.875" vertical-offset="138" max-vertical-offset="765">
-              <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+            <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="765">
+              <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="SudokuCell.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
+      <file leaf-file-name="SudokuController.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-8.25" vertical-offset="387" max-vertical-offset="1020">
-              <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
+            <state vertical-scroll-proportion="-17.833334" vertical-offset="652" max-vertical-offset="1470">
+              <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -180,17 +165,19 @@
         <option value="$PROJECT_DIR$/tests/tests/Empty.php" />
         <option value="$PROJECT_DIR$/lib/autoload.inc.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuModel.php" />
+        <option value="$PROJECT_DIR$/tests/tests/SudokuControllerTest.php" />
+        <option value="$PROJECT_DIR$/tests/tests/SudokuViewTest.php" />
+        <option value="$PROJECT_DIR$/format.inc.php" />
         <option value="$PROJECT_DIR$/tests/tests/SudokuCellTest.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuGame.php" />
         <option value="$PROJECT_DIR$/Cell.php" />
         <option value="$PROJECT_DIR$/tests/tests/SudokuModelTest.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuCell.php" />
         <option value="$PROJECT_DIR$/game.php" />
-        <option value="$PROJECT_DIR$/Sudoku.css" />
-        <option value="$PROJECT_DIR$/index.php" />
+        <option value="$PROJECT_DIR$/giveup.php" />
+        <option value="$PROJECT_DIR$/lib/cls/SudokuCell.php" />
         <option value="$PROJECT_DIR$/lib/cls/SudokuView.php" />
-        <option value="$PROJECT_DIR$/cell.php" />
-        <option value="$PROJECT_DIR$/lib/game.inc.php" />
+        <option value="$PROJECT_DIR$/lib/cls/SudokuController.php" />
       </list>
     </option>
   </component>
@@ -327,15 +314,15 @@
       <BehatRunner />
       <method />
     </configuration>
+    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="71c98801-ce99-4ec4-bc18-c584d806a962" server_name="webdev-project1">
+      <method />
+    </configuration>
     <configuration default="true" type="js.build_tools.gulp" factoryName="Gulp.js">
       <node-options />
       <gulpfile />
       <tasks />
       <pass-parent-envs>true</pass-parent-envs>
       <envs />
-      <method />
-    </configuration>
-    <configuration default="true" type="PhpUnitRemoteRunConfigurationType" factoryName="PHPUnit on Server" server_id="71c98801-ce99-4ec4-bc18-c584d806a962" server_name="webdev-project1">
       <method />
     </configuration>
     <list size="1">
@@ -358,7 +345,7 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="d53f52b0-2dcf-4df7-befd-95b3438e2e82" name="Default" comment="" />
+      <changelist id="f59dcad7-a297-4135-9ea3-92512ef30adf" name="Default" comment="" />
       <created>1424281745386</created>
       <option name="number" value="Default" />
       <updated>1424281745386</updated>
@@ -442,17 +429,17 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="960" extended-state="6" />
-    <editor active="false" />
+    <editor active="true" />
     <layout>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24539171" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24482758" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2108295" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18315019" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16117217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23137973" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.23931624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24573378" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
@@ -468,28 +455,27 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
     </layout>
     <layout-to-restore>
-      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24539171" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.2108295" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.328341" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.18315019" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.24573378" sideWeight="0.5" order="9" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32949308" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.16117217" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="File Transfer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32913166" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Remote Host" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3297568" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.24964234" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="combo" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
     </layout-to-restore>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -523,60 +509,23 @@
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="109" max-vertical-offset="615">
-          <caret line="26" column="8" selection-start-line="26" selection-start-column="8" selection-end-line="26" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/game.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="315">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="7" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="345">
+          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="930">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <marker date="1424980218000" expanded="true" signature="326:420" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="339:357" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="367:385" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="395:420" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1511:1680" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1784:1813" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1784:1948" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1867:1885" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1895:1913" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1923:1948" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2109:2749" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2117:2184" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2188:2255" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2259:2326" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2330:2397" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2401:2468" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2472:2539" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2543:2610" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2614:2681" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3296:3427" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3346:3364" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3374:3392" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3402:3427" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3588:4300" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3596:3671" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3675:3750" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3754:3829" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3833:3908" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3912:3987" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3991:4066" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="4070:4145" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="4149:4224" placeholder="..." />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="2097" max-vertical-offset="4455">
+          <caret line="229" column="44" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -584,9 +533,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="240" max-vertical-offset="405">
           <caret line="16" column="5" selection-start-line="16" selection-start-column="5" selection-end-line="16" selection-end-column="5" />
-          <folding>
-            <marker date="1424975410000" expanded="true" signature="-1:-1" placeholder=" @brief Empty unit testing template ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -594,9 +541,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="270" max-vertical-offset="360">
           <caret line="18" column="47" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -634,9 +579,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="315" max-vertical-offset="900">
-          <caret line="48" column="40" selection-start-line="48" selection-start-column="20" selection-end-line="48" selection-end-column="40" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -651,22 +595,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="540">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/giveup.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="60" max-vertical-offset="150">
-          <caret line="9" column="18" selection-start-line="9" selection-start-column="18" selection-end-line="9" selection-end-column="18" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1440">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/index.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="45" max-vertical-offset="360">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="285" max-vertical-offset="375">
+          <caret line="24" column="0" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -712,9 +655,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/checkpoint.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="375" max-vertical-offset="765">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -722,23 +664,21 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="3825">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="30" max-vertical-offset="150">
-          <caret line="2" column="0" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="1230" max-vertical-offset="1440">
+          <caret line="87" column="0" selection-start-line="87" selection-start-column="0" selection-end-line="87" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="630" max-vertical-offset="750">
-          <caret line="47" column="32" selection-start-line="47" selection-start-column="32" selection-end-line="47" selection-end-column="32" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2097" max-vertical-offset="4455">
+          <caret line="229" column="44" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -751,8 +691,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/checkpoint.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="235" max-vertical-offset="867">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="225" max-vertical-offset="765">
+          <caret line="15" column="13" selection-start-line="15" selection-start-column="13" selection-end-line="15" selection-end-column="13" />
           <folding />
         </state>
       </provider>
@@ -783,8 +723,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/tests/Empty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="357">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
@@ -811,8 +751,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/tests/tests/Empty.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.45132744" vertical-offset="0" max-vertical-offset="357">
-          <caret line="9" column="10" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2097" max-vertical-offset="4455">
+          <caret line="229" column="44" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
         </state>
       </provider>
     </entry>
@@ -842,9 +782,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0" vertical-offset="1800" max-vertical-offset="1965">
           <caret line="120" column="5" selection-start-line="120" selection-start-column="5" selection-end-line="120" selection-end-column="5" />
-          <folding>
-            <marker date="1424975410000" expanded="true" signature="-1:-1" placeholder=" @brief Empty unit testing template ..." />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,98 +798,35 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="29.875" vertical-offset="717" max-vertical-offset="1320">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.25" vertical-offset="387" max-vertical-offset="1020">
-          <caret line="44" column="23" selection-start-line="44" selection-start-column="23" selection-end-line="44" selection-end-column="23" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="300" max-vertical-offset="390">
+          <caret line="25" column="2" selection-start-line="25" selection-start-column="2" selection-end-line="25" selection-end-column="2" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/format.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="627">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.0" vertical-offset="2097" max-vertical-offset="4455">
+          <caret line="229" column="44" selection-start-line="229" selection-start-column="44" selection-end-line="229" selection-end-column="44" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/checkpoint.html">
+    <entry file="file://$PROJECT_DIR$/format.inc.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-9.875" vertical-offset="138" max-vertical-offset="765">
-          <caret line="25" column="22" selection-start-line="25" selection-start-column="22" selection-end-line="25" selection-end-column="22" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="75" max-vertical-offset="240">
+          <caret line="10" column="26" selection-start-line="10" selection-start-column="26" selection-end-line="10" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/index.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.658228" vertical-offset="0" max-vertical-offset="375">
-          <caret line="19" column="3" selection-start-line="19" selection-start-column="3" selection-end-line="19" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/game.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-13.125" vertical-offset="30" max-vertical-offset="645">
-          <caret line="23" column="19" selection-start-line="23" selection-start-column="19" selection-end-line="23" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/autoload.inc.php">
+    <entry file="file://$PROJECT_DIR$/tests/tests/SudokuCellTest.php">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="-6.875" vertical-offset="0" max-vertical-offset="255">
           <caret line="16" column="3" selection-start-line="16" selection-start-column="3" selection-end-line="16" selection-end-column="3" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-33.125" vertical-offset="0" max-vertical-offset="2670">
-          <caret line="58" column="72" selection-start-line="58" selection-start-column="72" selection-end-line="58" selection-end-column="72" />
-          <folding>
-            <marker date="1424980218000" expanded="true" signature="326:420" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="339:357" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="367:385" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="395:420" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1511:1680" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1620:1635" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1784:1813" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1784:1948" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1867:1885" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1895:1913" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="1923:1948" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2109:2749" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2117:2184" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2188:2255" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2259:2326" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2330:2397" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2401:2468" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2472:2539" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2543:2610" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="2614:2681" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3296:3427" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3346:3364" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3374:3392" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3402:3427" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3588:4300" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3596:3671" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3675:3750" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3754:3829" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3833:3908" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3912:3987" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="3991:4066" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="4070:4145" placeholder="..." />
-            <marker date="1424980218000" expanded="true" signature="4149:4224" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -963,29 +838,90 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/giveup.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="540" max-vertical-offset="645">
+          <caret line="41" column="7" selection-start-line="41" selection-start-column="7" selection-end-line="41" selection-end-column="7" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuCell.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0" vertical-offset="150" max-vertical-offset="945">
+          <caret line="15" column="26" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/lib/cls/SudokuModel.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-17.625" vertical-offset="687" max-vertical-offset="1440">
-          <caret line="74" column="65" selection-start-line="74" selection-start-column="65" selection-end-line="74" selection-end-column="65" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="1440">
+          <caret line="43" column="0" selection-start-line="43" selection-start-column="0" selection-end-line="43" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/cell.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.5" vertical-offset="0" max-vertical-offset="585">
-          <caret line="20" column="8" selection-start-line="20" selection-start-column="8" selection-end-line="20" selection-end-column="8" />
-          <folding>
-            <element signature="e#6#89#0#PHP" expanded="true" />
-          </folding>
+        <state vertical-scroll-proportion="0.0" vertical-offset="420" max-vertical-offset="510">
+          <caret line="33" column="7" selection-start-line="33" selection-start-column="7" selection-end-line="33" selection-end-column="7" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/lib/game.inc.php">
+    <entry file="file://$PROJECT_DIR$/game.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3125" vertical-offset="0" max-vertical-offset="816">
-          <caret line="22" column="36" selection-start-line="22" selection-start-column="36" selection-end-line="22" selection-end-column="36" />
+        <state vertical-scroll-proportion="0.0" vertical-offset="435" max-vertical-offset="645">
+          <caret line="29" column="0" selection-start-line="29" selection-start-column="0" selection-end-line="29" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-17.833334" vertical-offset="652" max-vertical-offset="1470">
+          <caret line="77" column="9" selection-start-line="77" selection-start-column="9" selection-end-line="77" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lib/cls/SudokuView.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="2.3801653" vertical-offset="0" max-vertical-offset="2790">
+          <caret line="101" column="0" selection-start-line="101" selection-start-column="0" selection-end-line="101" selection-end-column="0" />
+          <folding>
+            <marker date="1424980402000" expanded="true" signature="326:420" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="339:357" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="367:385" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="395:420" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="1786:1950" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="1869:1887" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="1897:1915" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="1925:1950" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2111:2751" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2119:2186" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2190:2257" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2261:2328" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2332:2399" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2403:2470" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2474:2541" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2545:2612" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="2616:2683" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3387:3518" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3437:3455" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3465:3483" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3493:3518" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3679:4391" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3687:3762" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3766:3841" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3845:3920" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="3924:3999" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="4003:4078" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="4082:4157" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="4161:4236" placeholder="..." />
+            <marker date="1424980402000" expanded="true" signature="4240:4315" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>

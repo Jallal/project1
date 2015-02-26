@@ -12,6 +12,7 @@ class SudokuController {
     private $page ='game.php';     // The next page we will go to
     private $reset = false;
     private $cheatmode = false;
+    private $guessesCount;
 
     public function __construct($sudoku, $request) {
 
@@ -35,6 +36,7 @@ class SudokuController {
             }
         elseif(isset($request['n'])){
             //new game
+            $this->guessesCount = 0;
             $this->reset = true;
         }
 
@@ -61,28 +63,35 @@ class SudokuController {
 
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-    public function insert_into_cell($row, $column,$guess) {
-        if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
-            $this->won();
+
+    public function insert_into_cell($row, $column,$guess)
+    {
+
+
+        $this->guessesCount = $this->guessesCount + 1;
+        if ($this->sudoku->getAnswerForCell($row, $column) == $guess) {
+
+            if ($this->sudoku->setUserGuessForCell($guess, $row, $column) === true) {
+
+                return $this->won();
+            }
         }
     }
 
     /** Move request
      * @param $ndx Index of the cell in to show the hint in */
-    public function hint($note,$row, $column)
-    {
+    public function hint($note,$row, $column){
         $this->sudoku->addNoteForCell($note, $row, $column);
 
     }
 
-    public function giveup()
-    {
+    public function giveup(){
         $this->page = 'giveup.php';
     }
-    public function won()
-    {
+    public function won(){
         $this->reset = true;
         $this->page = 'win.php';
 
     }
+
 }
