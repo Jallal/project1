@@ -20,13 +20,19 @@ $view = new SudokuView($sudoku);
 </head>
 
 <body>
-<?php echo present_header("You Lost This is the solution"); ?>
+<header>
+    <nav>
+        <p>
+            <a href="game-post.php?n">New Game</a>
+        </p>
+    </nav>
+</header>
 
 
 <div class="cells">
 
     <?php
-    echo $view->showSolution();
+    echo $view->showAnswer();
     ?>
 
 </div>

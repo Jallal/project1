@@ -61,7 +61,7 @@ HTML;
     public function showAnswer() {
         $html = <<<HTML
 <table>
-  <caption>Answer for Sudoku Puzzle</caption>
+  <caption>You Gave Up! Here's the Answer for Sudoku Puzzle</caption>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
