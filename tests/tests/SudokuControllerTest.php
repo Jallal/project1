@@ -20,7 +20,7 @@ class SudokuControllerTest extends \PHPUnit_Framework_TestCase
 		$sudoku = new SudokuModel(11);
 		$controller = new SudokuController($sudoku,array());
 		$controller->insert_into_cell(0,0,2);
-		$this->assertEquals(2,$sudoku->getDefaultValue(0,0) );
+		$this->assertEquals(2,$sudoku->getUserGuessForCell(0,0) );
 
 
 	}

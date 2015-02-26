@@ -72,7 +72,6 @@ class SudokuController {
      * @param $ndx Index of the cell in to show the hint in */
     public function hint($note,$row, $column){
         $this->sudoku->addNoteForCell($note, $row, $column);
-
     }
 
     public function giveup(){
