@@ -64,14 +64,15 @@ HTML;
         if(sizeof($this->sudoku->getNotesForCell($row,$column))){
 
             $notes = $this->sudoku->getNotesForCell($row,$column);
+            $allnotes = "";
 
             foreach($notes as $key=>$value)
             {
 
-                echo " ".$value;
+                $allnotes = " ".$value.$allnotes;
 
             }
-
+        return $allnotes;
         }
 
     }

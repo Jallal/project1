@@ -62,7 +62,7 @@ class SudokuModel{
 
     private function checkForWin() {
         for ($row = 0; $row < 9; $row++) {
-            if (!($this->game[$row] === $this->answer[$row])) {
+            if (!($this->game[$row] == $this->answer[$row])) {
                 return false;
             }
         }

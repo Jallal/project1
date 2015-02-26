@@ -25,6 +25,7 @@ $view = new SudokuView($sudoku);
     <?php
     echo $view->updatedStatus();
     ?>
+
 </div>
 
 

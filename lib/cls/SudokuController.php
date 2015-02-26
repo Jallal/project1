@@ -6,7 +6,7 @@
  * Time: 11:58 PM
  */
 
-class SudokuController{
+class SudokuController {
 
     private $sudoku;                // The Wumpus object we are controlling
     private $page ='game.php';     // The next page we will go to
@@ -16,7 +16,6 @@ class SudokuController{
     public function __construct($sudoku, $request) {
 
             $this->sudoku = $sudoku;
-
         if(isset($request['c'])){
             //activate the cheat mode
             $this->cheatmode = true;
@@ -39,7 +38,7 @@ class SudokuController{
             $this->reset = true;
         }
 
-        elseif(isset($request['gaveup'])){
+        elseif(isset($request['m'])){
             //activate the cheat mode
             $this->giveup();
         }
@@ -57,47 +56,38 @@ class SudokuController{
 
     public function IscheatMode(){
 
-       $this->cheatmode;
+       return $this->cheatmode;
     }
 
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-    private function insert_into_cell($row, $column,$guess) {
+    public function insert_into_cell($row, $column,$guess) {
 
         if($this->sudoku->getAnswerForCell($row, $column)==$guess){
-            $this->sudoku->setUserGuessForCell($guess, $row, $column);
+
+            if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
+
+                return $this->won();
+            }
         }
-
-        if($this->check_status()){
-            $this->won();
-        }
-    }
-
-
-/** Move request
-* @param $ndx Index of the cell in the sudoku */
-    private function check_status()
-    {
-
-        return false;
 
     }
 
     /** Move request
      * @param $ndx Index of the cell in to show the hint in */
-    private function hint($note,$row, $column)
+    public function hint($note,$row, $column)
     {
         $this->sudoku->addNoteForCell($note, $row, $column);
 
     }
 
-    private function giveup()
+    public function giveup()
     {
         $this->reset = true;
         $this->page = 'giveup.php';
 
     }
-    private function won()
+    public function won()
     {
         $this->reset = true;
         $this->page = 'win.php';
