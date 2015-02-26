@@ -6,5 +6,38 @@
  * Time: 5:04 PM
  */
 
+require 'format.inc.php';
+require 'lib/game.inc.php';
+$view = new SudokuView($sudoku);
+?>
 
-echo "giveup.php";
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sudoku game </title>
+    <link rel="stylesheet" href="Sudoku.css" />
+</head>
+
+<body>
+<header>
+    <nav>
+        <p>
+            <a href="game-post.php?n">New Game</a>
+        </p>
+    </nav>
+</header>
+
+
+<div class="cells">
+
+    <?php
+    echo $view->showAnswer();
+    ?>
+
+</div>
+
+
+
+</body>
+</html>

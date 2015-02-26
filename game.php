@@ -7,7 +7,6 @@
  */
 require 'format.inc.php';
 require 'lib/game.inc.php';
-
 $view = new SudokuView($sudoku);
 ?>
 
@@ -20,13 +19,16 @@ $view = new SudokuView($sudoku);
 </head>
 
 <body>
-
+<?php echo present_header("The Sudoku game"); ?>
 
 <div class="cells">
     <?php
-    echo $view->presentStatus();
+    echo $view->updatedStatus();
     ?>
+
 </div>
+
+
 
 </body>
 </html>

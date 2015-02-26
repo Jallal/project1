@@ -15,6 +15,11 @@ class SudokuCellTest extends \PHPUnit_Framework_TestCase
 		$this->assertEquals(5, $cell->getAnswer());
 	}
 
+	public function test_getDefaultValue() {
+		$cell = new SudokuCell(1, 0, 0, 7);
+		$this->assertEquals(7, $cell->getDefaultValue());
+	}
+
 	public function test_getRow() {
 		$cell = new SudokuCell(7, 3, 8, 0);
 		$this->assertEquals(3, $cell->getRow());
@@ -44,7 +49,14 @@ class SudokuCellTest extends \PHPUnit_Framework_TestCase
 
 		$cell->setUserGuess(4);
 
-		$this->assertEquals(4, $cell->getUserGuess());
+		$this->assertEquals(4, $cell->getDefaultValue());
+	}
+
+	public function test_isUserGuessCorrect() {
+		$cell = new SudokuCell(1, 2, 3, 0);
+		$cell->setUserGuess(3);
+
+		$this->assertFalse($cell->isUserGuessCorrect());
 	}
 }
 

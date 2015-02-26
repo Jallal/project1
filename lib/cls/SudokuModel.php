@@ -1,8 +1,9 @@
 <?php
 
-class SudokuModel {
+class SudokuModel{
     private $game;
     private $answer;
+    private $numNotes = 0;
     private $cells = array();
 
     public function __construct($gameNum=-1) {
@@ -14,6 +15,11 @@ class SudokuModel {
             $selection = rand(0,9);
             $this->game = $games[$selection];
             $this->answer = $answers[$selection];
+
+            $this->constructCells();
+        } elseif($gameNum == 11) {
+            $this->game = $sudokuGame->getCheatGame();
+            $this->answer = $sudokuGame->getCheatAnswer();
 
             $this->constructCells();
         } else {
@@ -35,6 +41,7 @@ class SudokuModel {
         }
     }
 
+
     public function getDefaultValue($row, $column) {
         return $this->cells[$row][$column]->getDefaultValue();
     }
@@ -50,7 +57,18 @@ class SudokuModel {
     public function setUserGuessForCell($guess, $row, $column) {
         $cell = $this->cells[$row][$column];
         $cell->setUserGuess($guess);
-        return $cell->isUserGuessCorrect();
+        $this->game[$row][$column] = $guess;
+        return $this->checkForWin();
+    }
+
+    private function checkForWin() {
+        for ($row = 0; $row < 9; $row++) {
+            if (!($this->game[$row] == $this->answer[$row])) {
+                return false;
+            }
+        }
+
+        return true;
     }
 
     public function isUserGuessCorrect($row, $column) {
@@ -64,6 +82,7 @@ class SudokuModel {
     public function addNoteForCell($note, $row, $column) {
         $cell = $this->cells[$row][$column];
         $cell->addNote($note);
+        $this->numNotes++;
     }
 
     public function getNotesForCell($row, $column) {
