@@ -17,6 +17,7 @@
 <body>
 Welcome!<br>
 <a href="game-post.php?n">Play Sudoku</a>
+<a href="game-post.php?c">Cheat Mode</a>
 </body>
 
 </html>

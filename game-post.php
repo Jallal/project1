@@ -15,8 +15,8 @@ if($controller->isReset()) {
 }
 
 elseif($controller->ischeatMode()){
+    unset($_SESSION[SUDOKU_SESSION]);
     $_SESSION[SUDOKU_SESSION] = new SudokuModel(11);
-
 }
 
 //echo"<p>" .$controller->getPage()."</p>";
