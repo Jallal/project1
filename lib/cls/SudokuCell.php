@@ -49,7 +49,7 @@ class SudokuCell {
     }
 
     public function setUserGuess($guess) {
-        $this->defaultValue = $guess;
+        $this->userGuess = $guess;
     }
 
     public function getUserGuess() {
@@ -57,7 +57,11 @@ class SudokuCell {
     }
 
     public function isUserGuessCorrect() {
-        return ($this->answer === $this->userGuess);
+        if ($this->answer == $this->userGuess) {
+            return true;
+        } else {
+            return false;
+        }
     }
 
 }

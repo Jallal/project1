@@ -22,3 +22,33 @@ td {
     text-align: center;
     padding: 0;
 }
+
+.cell {
+    font-size: 2em;
+}
+
+.guess:link, .guess:visited  {
+    color: green;
+    text-decoration: none;
+}
+
+.guess-box {
+    padding-top: 30px;
+    height: 205px;
+    width: 300px;
+    margin: 0 auto;
+    background-color: lightblue;
+}
+
+.guess-box form {
+    text-align: center;
+    display: block;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+    margin: 0 auto;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+h1 {
+    text-align: center;
+}

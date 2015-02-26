@@ -11,11 +11,11 @@
 <html>
 <head>
 <meta charset="utf-8">
-<title>Project 1 Sudoku HOME</title>
+<title>Project 1 Sudoku</title>
 </head>
 
 <body>
-Welcome!<br>
+<h1>Welcome to our Sudoku Game!</h1>
 <a href="game-post.php?n">Play Sudoku</a>
 <a href="game-post.php?c">Cheat Mode</a>
 </body>
