@@ -61,7 +61,10 @@ class SudokuController {
        return $this->cheatmode;
     }
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 8ac25480e00789530362989e96170b9ecbd180fa
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
 
@@ -76,6 +79,10 @@ class SudokuController {
 
                 return $this->won();
             }
+<<<<<<< HEAD
+=======
+
+>>>>>>> 8ac25480e00789530362989e96170b9ecbd180fa
         }
     }
 
