@@ -119,7 +119,7 @@ HTML;
 
     public function numberOfGuesses(){
 
-        return $this->numberOfGuesses();
+        return $this->sudoku->getNumNotes();
     }
     public function playerName(){
 

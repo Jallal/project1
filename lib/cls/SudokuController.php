@@ -13,14 +13,15 @@ class SudokuController {
     private $reset = false;
     private $cheatmode = false;
     private $guessesCount;
-    private  $userName;
 
 
     public function __construct($sudoku, $request) {
 
             $this->sudoku = $sudoku;
 
-        if(isset($request['name'])){
+        if(isset($request['username'])){
+
+            var_dump($request['name']);
             $this->sudoku->Setusername($request['name']);
             $this->guessesCount = 0;
             $this->reset = true;
