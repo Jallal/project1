@@ -7,22 +7,28 @@
  */
 ?>
 <html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sudoku</title>
+    <link rel="stylesheet" href="Sudoku.css" />
+</head>
+    <div class="guess-box">
     <form   name=userinput" action="game-post.php" method="post">
         Enter value for cell:<br>
-        <input type="text" name="cell_value" value="0-9">
+        <input type="text" name="cell_value" placeholder="1-9" value="">
         <input type="hidden" name="x" value="<?php echo $_GET['x']; ?>">
         <input type="hidden" name="y" value="<?php echo $_GET['y']; ?>">
-    <br>
-        <br>
-    <input type="submit"  name ="submit_button" value="Submit">
+    <br><br>
+    <input type="submit"  name ="submit_button" value="Add Guess">
 
     <br>Enter a note for cell:<br>
     <form   name=usernotes" action="game-post.php" method="post">
-    <input type="text" name="cell_note" value="0-9">
+    <input type="text" name="cell_note" placeholder="1-9" value="">
     <input type="hidden" name="x" value="<?php echo $_GET['x']; ?>">
     <input type="hidden" name="y" value="<?php echo $_GET['y']; ?>">
     <br>
     <br>
-    <input type="submit"  name ="note_button" value="add note">
+    <input type="submit"  name ="note_button" value="Add Note">
     </form>
+    </div>
 </html>

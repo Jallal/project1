@@ -14,12 +14,12 @@ $view = new SudokuView($sudoku);
 <html>
 <head lang="en">
     <meta charset="UTF-8">
-    <title>Sudoku game </title>
+    <title>Sudoku game</title>
     <link rel="stylesheet" href="Sudoku.css" />
 </head>
 
 <body>
-<?php echo present_header("The Sudoku game"); ?>
+<?php echo present_header("Sudoku Game"); ?>
 
 <div class="cells">
     <?php
