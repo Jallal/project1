@@ -28,6 +28,14 @@ $view = new SudokuView($sudoku);
 
 </div>
 
+<div class="cells">
+
+    <?php
+    echo $view->showSolution();
+    ?>
+
+</div>
+
 
 
 </body>
