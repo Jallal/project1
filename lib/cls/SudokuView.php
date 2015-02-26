@@ -50,13 +50,13 @@ HTML;
 
                 } else if ($this->sudoku->getNotesForCell($x,$y) != array()){
 
+
                     $html .= '<td><div class="">';
 
                     foreach ($this->sudoku->getNotesForCell($x,$y) as $note){
                         $html .= $note;
                     }
-
-                    $html .= '<br><a class="" href="cell.php?x=$x&y=$y">Guess</a></div>';
+                    $html .= '<br><a class="" href="cell.php?x=' . $x . '&y=' . $y . '">Guess</a></div>';
                 } else {
                     $html .= <<<HTML
                     <td><a class="cell" href="cell.php?x=$x&y=$y">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
