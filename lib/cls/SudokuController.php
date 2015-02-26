@@ -65,7 +65,7 @@ class SudokuController {
     public function insert_into_cell($row, $column,$guess) {
         if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
             $this->won();
-        }
+        } 
     }
 
     /** Move request
