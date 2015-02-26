@@ -60,6 +60,43 @@ HTML;
         return $html;
     }
 
+    public function showAnswer() {
+        $html = <<<HTML
+<table>
+  <caption>You Gave Up! Here's the Answer for Sudoku Puzzle</caption>
+  <colgroup><col><col><col>
+  <colgroup><col><col><col>
+  <colgroup><col><col><col>
+  <tbody>
+HTML;
+        for ($i = 0; $i < 9; $i++) {
+            if ($i % 3 == 0) {
+                $html .= '<tbody>';
+            }
+            $html .= <<<HTML
+   <tr>
+   <td>{$this->sudoku->getAnswerForCell($i,0)}
+   <td>{$this->sudoku->getAnswerForCell($i,1)}
+   <td>{$this->sudoku->getAnswerForCell($i,2)}
+   <td>{$this->sudoku->getAnswerForCell($i,3)}
+   <td>{$this->sudoku->getAnswerForCell($i,4)}
+   <td>{$this->sudoku->getAnswerForCell($i,5)}
+   <td>{$this->sudoku->getAnswerForCell($i,6)}
+   <td>{$this->sudoku->getAnswerForCell($i,7)}
+   <td>{$this->sudoku->getAnswerForCell($i,8)}
+
+HTML;
+        }
+
+
+        $html .= <<<HTML
+</table>
+HTML;
+
+
+        return $html;
+    }
+
 
     public function numberOfGuesses(){
 

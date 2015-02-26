@@ -3,6 +3,7 @@
 class SudokuModel{
     private $game;
     private $answer;
+    private $numNotes = 0;
     private $cells = array();
 
     public function __construct($gameNum=-1) {
@@ -81,6 +82,7 @@ class SudokuModel{
     public function addNoteForCell($note, $row, $column) {
         $cell = $this->cells[$row][$column];
         $cell->addNote($note);
+        $this->numNotes++;
     }
 
     public function getNotesForCell($row, $column) {
