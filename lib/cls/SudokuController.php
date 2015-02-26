@@ -63,7 +63,7 @@ class SudokuController {
 
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-<<<<<<< HEAD
+
     public function insert_into_cell($row, $column,$guess)
     {
 
@@ -75,12 +75,6 @@ class SudokuController {
 
                 return $this->won();
             }
-
-=======
-    public function insert_into_cell($row, $column,$guess) {
-        if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
-            $this->won();
->>>>>>> b47baafa943530b7c80b6271b0d29e3c2f636ff6
         }
     }
 
