@@ -61,18 +61,28 @@ class SudokuController {
        return $this->cheatmode;
     }
 
+    /** Move request
+     * @param $ndx Index of the cell in the sudoku */
 
+<<<<<<< HEAD
     public function insert_into_cell($row, $column,$guess) {
         if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
             $this->won();
         } 
+=======
+    public function insert_into_cell($row, $column,$guess)
+    {
+
+            if ($this->sudoku->setUserGuessForCell($guess, $row, $column) === true) {
+                $this->won();
+            }
+>>>>>>> f293ada66dbb35001e4a6ca5c9305b9e9a8c964f
     }
 
     /** Move request
      * @param $ndx Index of the cell in to show the hint in */
     public function hint($note,$row, $column){
         $this->sudoku->addNoteForCell($note, $row, $column);
-
     }
 
     public function giveup(){

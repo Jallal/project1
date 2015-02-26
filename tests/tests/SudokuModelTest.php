@@ -36,7 +36,7 @@ class SudokuModelTest extends \PHPUnit_Framework_TestCase
 		$sudoku = new SudokuModel(0);
 
 		$this->assertFalse($sudoku->setUserGuessForCell(3, 0, 0));
-		$this->assertEquals(3, $sudoku->getDefaultValue(0,0));
+		$this->assertEquals(3, $sudoku->getUserGuessForCell(0,0));
 	}
 
 	public function test_checkForWin() {
@@ -113,11 +113,20 @@ class SudokuModelTest extends \PHPUnit_Framework_TestCase
 
 	public function test_addNoteForCell() {
 		$sudoku = new SudokuModel(0);
-		$sudoku->addNoteForCell(7,0,0);
+		$this->assertEquals(0, count($sudoku->getNotesForCell(0,0)));
 
+		$sudoku->addNoteForCell(7,0,0);
 		$notes = $sudoku->getNotesForCell(0,0);
 
-		$this->assertTrue(in_array(7, $notes));
+		$this->assertEquals(7, $notes[0]);
+		$this->assertEquals(1, count($sudoku->getNotesForCell(0,0)));
+
+		$sudoku->addNoteForCell(8,0,0);
+		$notes = $sudoku->getNotesForCell(0,0);
+
+		$this->assertEquals(8, $notes[1]);
+		$this->assertEquals(2, count($sudoku->getNotesForCell(0,0)));
+
 	}
 
 	public function test_getNumNotes() {

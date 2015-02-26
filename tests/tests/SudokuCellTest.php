@@ -49,7 +49,7 @@ class SudokuCellTest extends \PHPUnit_Framework_TestCase
 
 		$cell->setUserGuess(4);
 
-		$this->assertEquals(4, $cell->getDefaultValue());
+		$this->assertEquals(4, $cell->getUserGuess());
 	}
 
 	public function test_isUserGuessCorrect() {
