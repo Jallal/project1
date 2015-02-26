@@ -18,6 +18,16 @@
 <h1>Welcome to our Sudoku Game!</h1>
 <a href="game-post.php?n">Play Sudoku</a>
 <a href="game-post.php?c">Cheat Mode</a>
+
+
+
+<br>Enter the player name :<br>
+<form   name=usernotes" action="game-post.php" method="post">
+    <input type="text" name="name" placeholder="1-9" value="">
+    <br>
+    <input type="submit"  name ="name" value="Submit">
+</form>
+
 </body>
 
 </html>

@@ -121,6 +121,10 @@ HTML;
 
         return $this->numberOfGuesses();
     }
+    public function playerName(){
+
+        return $this->sudoku->getusername();
+    }
 
 
     public function showMeNotes($row,$column)
