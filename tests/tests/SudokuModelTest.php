@@ -36,7 +36,7 @@ class SudokuModelTest extends \PHPUnit_Framework_TestCase
 		$sudoku = new SudokuModel(0);
 
 		$this->assertFalse($sudoku->setUserGuessForCell(3, 0, 0));
-		$this->assertEquals(3, $sudoku->getUserGuessForCell(0,0));
+		$this->assertEquals(3, $sudoku->getDefaultValue(0,0));
 	}
 
 	public function test_checkForWin() {
