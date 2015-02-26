@@ -5,6 +5,7 @@
  * Date: 2/12/15
  * Time: 5:04 PM
  */
+
 require 'format.inc.php';
 require 'lib/game.inc.php';
 $view = new SudokuView($sudoku);
@@ -19,13 +20,13 @@ $view = new SudokuView($sudoku);
 </head>
 
 <body>
-<header>
-    <nav><p><a href="game-post.php?n">New Game</a></p></nav>
-</header>
+<?php echo present_header("You Lost This is the solution"); ?>
+
 
 <div class="cells">
+
     <?php
-    echo $view->showAnswer();
+    echo $view->showSolution();
     ?>
 
 </div>
@@ -34,6 +35,3 @@ $view = new SudokuView($sudoku);
 
 </body>
 </html>
-
-
-
