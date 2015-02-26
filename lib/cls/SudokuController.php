@@ -63,37 +63,32 @@ class SudokuController {
 
     /** Move request
      * @param $ndx Index of the cell in the sudoku */
-    public function insert_into_cell($row, $column,$guess) {
-<<<<<<< HEAD
+    public function insert_into_cell($row, $column,$guess)
+    {
 
-        $this->guessesCount = $this->guessesCount+1;
-        if($this->sudoku->getAnswerForCell($row, $column)==$guess){
 
-            if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
+        $this->guessesCount = $this->guessesCount + 1;
+        if ($this->sudoku->getAnswerForCell($row, $column) == $guess) {
+
+            if ($this->sudoku->setUserGuessForCell($guess, $row, $column) === true) {
 
                 return $this->won();
             }
-=======
-        if($this->sudoku->setUserGuessForCell($guess, $row, $column)===true){
-            $this->won();
->>>>>>> b8cd3865e9b15426a46e9f7df2238f33181a556a
+
         }
     }
 
     /** Move request
      * @param $ndx Index of the cell in to show the hint in */
-    public function hint($note,$row, $column)
-    {
+    public function hint($note,$row, $column){
         $this->sudoku->addNoteForCell($note, $row, $column);
 
     }
 
-    public function giveup()
-    {
+    public function giveup(){
         $this->page = 'giveup.php';
     }
-    public function won()
-    {
+    public function won(){
         $this->reset = true;
         $this->page = 'win.php';
 
