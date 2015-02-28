@@ -5,7 +5,7 @@ class SudokuModel{
     private $answer;
     private $numNotes = 0;
     private $cells = array();
-    private $username;
+    private $username = ' ';
 
     public function __construct($gameNum=-1) {
         $sudokuGame = new SudokuGame();
@@ -96,11 +96,9 @@ class SudokuModel{
     public function getusername(){
 
         return $this->username;
-
-
     }
     public function Setusername($name){
-         $this->username = $name;
+        $this->username = $name;
 
     }
 

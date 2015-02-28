@@ -28,7 +28,16 @@ $view = new SudokuView($sudoku);
     </nav>
 </header>
 
+<br>
+<br>
+<div class="me">
+    <?php
+    echo $view->playerName();
+    ?>
+</div>
 
+<br>
+<br>
 <div class="cells">
 
     <?php
