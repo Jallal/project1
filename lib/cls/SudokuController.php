@@ -12,7 +12,6 @@ class SudokuController {
     private $page ='game.php';     // The next page we will go to
     private $reset = false;
     private $cheatmode = false;
-    private $guessesCount;
 
 
     public function __construct($sudoku, $request) {
@@ -20,8 +19,6 @@ class SudokuController {
             $this->sudoku = $sudoku;
 
         if(isset($request['username'])){
-
-            var_dump($request['name']);
             $this->sudoku->Setusername($request['name']);
             $this->guessesCount = 0;
             $this->reset = true;
@@ -46,7 +43,6 @@ class SudokuController {
             }
         elseif(isset($request['n'])){
             //new game
-            $this->guessesCount = 0;
             $this->reset = true;
         }
 
@@ -89,6 +85,7 @@ class SudokuController {
     }
 
     public function giveup(){
+        $this->reset = true;
         $this->page = 'giveup.php';
     }
     public function won(){
