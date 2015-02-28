@@ -19,13 +19,19 @@ $view = new SudokuView($sudoku);
 </head>
 
 <body>
-<?php echo present_header("Sudoku Game"); ?>
+<?php echo present_header("Sudoku Game "); ?>
+
+<div class="username">
+    <?php
+    echo $view->playerName();
+    ?>
+</div>
+
 
 <div class="cells">
     <?php
     echo $view->updatedStatus();
     ?>
-
 </div>
 
 

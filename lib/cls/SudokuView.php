@@ -119,7 +119,11 @@ HTML;
 
     public function numberOfGuesses(){
 
-        return $this->numberOfGuesses();
+        return $this->sudoku->getNumNotes();
+    }
+    public function playerName(){
+
+        return $this->sudoku->getusername();
     }
 
 
@@ -139,48 +143,6 @@ HTML;
         return $allnotes;
         }
 
-    }
-
-
-
-
-    public function showSolution() {
-
-
-        $html = <<<HTML
-<table>
-  <caption>SUDOKU SOLUTION</caption>
-  <colgroup><col><col><col>
-  <colgroup><col><col><col>
-  <colgroup><col><col><col>
-  <tbody>
-HTML;
-        for ($i = 0; $i < 9; $i++) {
-            if ($i % 3 == 0) {
-                $html .= '<tbody>';
-            }
-            $html .= <<<HTML
-   <tr>
-   <td><a href="cell.php?x=$i&y=0">{$this->sudoku->getAnswerForCell($i,0)}</a>
-   <td><a href="cell.php?x=$i&y=1">{$this->sudoku->getAnswerForCell($i,1)}</a>
-   <td><a href="cell.php?x=$i&y=2">{$this->sudoku->getAnswerForCell($i,2)}</a>
-   <td><a href="cell.php?x=$i&y=3">{$this->sudoku->getAnswerForCell($i,3)}</a>
-   <td><a href="cell.php?x=$i&y=4">{$this->sudoku->getAnswerForCell($i,4)}</a>
-   <td><a href="cell.php?x=$i&y=5">{$this->sudoku->getAnswerForCell($i,5)}</a>
-   <td><a href="cell.php?x=$i&y=6">{$this->sudoku->getAnswerForCell($i,6)}</a>
-   <td><a href="cell.php?x=$i&y=7">{$this->sudoku->getAnswerForCell($i,7)}</a>
-   <td><a href="cell.php?x=$i&y=8">{$this->sudoku->getAnswerForCell($i,8)}</a>
-
-HTML;
-        }
-
-
-        $html .= <<<HTML
-</table>
-HTML;
-
-
-        return $html;
     }
 
 }
