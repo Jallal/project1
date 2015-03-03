@@ -6,4 +6,45 @@
  * Time: 5:04 PM
  */
 
-echo "win.php";
+require 'format.inc.php';
+require 'lib/game.inc.php';
+$view = new SudokuView($sudoku);
+?>
+
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Sudoku game</title>
+    <link rel="stylesheet" href="Sudoku.css" />
+</head>
+
+<body>
+<header>
+    <nav>
+        <p>
+            <a href="game-post.php?n">New Game</a>
+        </p>
+    </nav>
+</header>
+
+<h1>Congratulations you've finished the puzzle.</h1>
+
+
+<br>
+<br>
+<div class="me">
+    <?php
+    echo $view->playerName();
+    ?>
+</div>
+
+<br>
+<br>
+<div class="cells">
+
+    <?php
+    echo $view->showAnswer();
+    ?>
+
+</div>

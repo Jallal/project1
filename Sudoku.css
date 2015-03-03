@@ -1,5 +1,15 @@
 @charset "utf-8";
 
+body
+{
+    background:url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAoAAAAKCAYAAACNMs+9AAAATElEQVQYV2O0O3X+PwMQHDIzZATRuAAj0QqxmfDghh3YFgWNQ3BbsFpHtEJstjBWnIdY02GIsIYyhdh0f5oZB7aFL30Rfs8QrRCbLQDvfSALXdnbSgAAAABJRU5ErkJggg==) repeat;
+}
+
+.break
+{
+    word-break: break-all;
+}
+
 nav {
     margin: 1em 0.5em -1em 1em;
     text-align: right;
@@ -23,13 +33,23 @@ td {
     padding: 0;
 }
 
+
 .cell {
     font-size: 2em;
+}
+
+.cell:link, .cell:visited {
+    color: blue;
 }
 
 .guess:link, .guess:visited  {
     color: green;
     text-decoration: none;
+}
+
+.wrong {
+    color: orange !important;
+
 }
 
 .guess-box {

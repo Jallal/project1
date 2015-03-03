@@ -12,6 +12,13 @@
     <title>Sudoku</title>
     <link rel="stylesheet" href="Sudoku.css" />
 </head>
+
+<body>
+
+
+<h1>Cell Guess</h1>
+
+
     <div class="guess-box">
     <form   name=userinput" action="game-post.php" method="post">
         Enter value for cell:<br>
@@ -31,4 +38,6 @@
     <input type="submit"  name ="note_button" value="Add Note">
     </form>
     </div>
+
+</body>
 </html>

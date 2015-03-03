@@ -22,7 +22,6 @@ $view = new SudokuView($sudoku);
 <?php echo present_header("Sudoku Game "); ?>
 
 
-
 <div class="cells">
     <?php
     echo $view->updatedStatus();

@@ -28,6 +28,9 @@ $view = new SudokuView($sudoku);
     </nav>
 </header>
 
+<h1>You gave up. Here is the answer.</h1>
+
+
 <br>
 <br>
 <div class="me">

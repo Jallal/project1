@@ -44,14 +44,24 @@ HTML;
                     <td><div class="cell">{$this->sudoku->getDefaultValue($x,$y)}</div>
 HTML;
                 } else if ($this->sudoku->getUserGuessForCell($x,$y)) {
-                    $html .= <<<HTML
+
+                    if ($this->sudoku->isUserGuessCorrect($x,$y)){
+                        $html .= <<<HTML
                     <td><a class="cell guess" href="cell.php?x=$x&y=$y">{$this->sudoku->getUserGuessForCell($x,$y)}</a>
 HTML;
+                    } else {
+                        $html .= <<<HTML
+                    <td><a class="cell guess wrong" href="cell.php?x=$x&y=$y">{$this->sudoku->getUserGuessForCell($x,$y)}</a>
+HTML;
+                    }
+
+
+
 
                 } else if ($this->sudoku->getNotesForCell($x,$y) != array()){
 
 
-                    $html .= '<td><div class="">';
+                    $html .= '<td><div class="break">';
 
                     foreach ($this->sudoku->getNotesForCell($x,$y) as $note){
                         $html .= $note;
@@ -82,8 +92,6 @@ HTML;
     public function showAnswer() {
         $html = <<<HTML
 <table>
-
-  <caption>You Gave Up! Here's the Answer for Sudoku Puzzle</caption>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
@@ -122,7 +130,7 @@ HTML;
         return $this->sudoku->getNumNotes();
     }
     public function playerName(){
-        $name =$this->sudoku->getusername();
+        $name = $this->sudoku->getusername();
         return  $name;
     }
 
