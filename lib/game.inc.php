@@ -16,6 +16,7 @@ define("SUDOKU_SESSION", 'sudoku');
 
 
 if(!isset($_SESSION[SUDOKU_SESSION])){
+    $_SESSION['username'] = "";
     $_SESSION[SUDOKU_SESSION] = new SudokuModel(-1, $_SESSION['username']);   //
 
 }
