@@ -60,16 +60,28 @@ HTML;
 
                 } else if ($this->sudoku->getNotesForCell($x,$y) != array()){
 
-
-                    $html .= '<td><div class="break">';
-
-                    foreach ($this->sudoku->getNotesForCell($x,$y) as $note){
-                        $html .= $note;
+                    //$html .= '<td class="notes"><div class=""><a class="guess-right" href="cell.php?x=' . $x . '&y=' . $y . '">';
+                    $notes = $this->sudoku->getNotesForCell($x, $y);
+                    $html .= '<td class="notes">';
+                    for ($i = 0; $i < count($notes); $i++) {
+                        if ($i%3 == 0) {
+                            $html .= '<div class="note-div">';
+                        }
+                        $html .= '<span class="note-span"><a class="guess-right" href="cell.php?x=' . $x . '&y=' . $y . '">';
+                        $html .= $notes[$i];
+                        $html .= '</a></span>';
+                        if (($i+1)%3 == 0) {
+                            $html .= '</div>';
+                        }
                     }
-                    $html .= '<br><a class="" href="cell.php?x=' . $x . '&y=' . $y . '">Guess</a></div>';
+                    /*foreach ($this->sudoku->getNotesForCell($x,$y) as $note){
+                        $html .= $note;
+                    }*/
+                    //$html .= '</a></div>';
+                    //$html .= '<br><a class="" href="cell.php?x=' . $x . '&y=' . $y . '">Guess</a></div>';
                 } else {
                     $html .= <<<HTML
-                    <td><a class="cell" href="cell.php?x=$x&y=$y">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
+                    <td><a class="cell blank-cell" href="cell.php?x=$x&y=$y">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</a>
 HTML;
                 }
 
