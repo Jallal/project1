@@ -21,11 +21,6 @@ $view = new SudokuView($sudoku);
 <body>
 <?php echo present_header("Sudoku Game "); ?>
 
-<div class="username">
-    <?php
-    echo $view->playerName();
-    ?>
-</div>
 
 
 <div class="cells">

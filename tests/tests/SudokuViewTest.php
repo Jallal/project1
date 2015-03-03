@@ -16,17 +16,25 @@ class SudokuViewTest extends \PHPUnit_Framework_TestCase
 	public function test_updateStatus()
 	{
 		$sudoku = new SudokuModel(11);
-		$view = new SudokuView($sudoku);
 
+
+		$sudoku->setUserGuessForCell(2,0,0);
+		$this->assertEquals(2,$sudoku->getUserGuessForCell(0,0));
+
+		$sudoku->setUserGuessForCell(5,0,0);
+		$this->assertNotEquals(2,$sudoku->getUserGuessForCell(0,0));
 	}
 
 	public function test_showMeNotes()
 	{
 		$sudoku = new SudokuModel(11);
 		$sudoku->addNoteForCell(9,0,0);
-		$view = new SudokuView($sudoku);
-		$status = $view->showMeNotes(0,0);
+		$status = $sudoku->getNotesForCell(0,0);
 		$this->assertContains('9',$status);
+		$sudoku->addNoteForCell(5,1,1);
+		$sudoku->addNoteForCell(1,1,1);
+		$status = $sudoku->getNotesForCell(1,1);
+		$this->assertContains('5 1',$status);
 
 	}
 }

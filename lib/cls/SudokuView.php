@@ -82,6 +82,7 @@ HTML;
     public function showAnswer() {
         $html = <<<HTML
 <table>
+
   <caption>You Gave Up! Here's the Answer for Sudoku Puzzle</caption>
   <colgroup><col><col><col>
   <colgroup><col><col><col>
@@ -117,32 +118,13 @@ HTML;
     }
 
 
-    public function numberOfGuesses(){
-
+    public function numberOfNotes(){
         return $this->sudoku->getNumNotes();
     }
     public function playerName(){
-
-        return $this->sudoku->getusername();
+        $name =$this->sudoku->getusername();
+        return  $name;
     }
 
-
-    public function showMeNotes($row,$column)
-    {
-        if(sizeof($this->sudoku->getNotesForCell($row,$column))){
-
-            $notes = $this->sudoku->getNotesForCell($row,$column);
-            $allnotes = "";
-
-            foreach($notes as $key=>$value)
-            {
-
-                $allnotes = " ".$value.$allnotes;
-
-            }
-        return $allnotes;
-        }
-
-    }
 
 }

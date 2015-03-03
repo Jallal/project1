@@ -20,8 +20,6 @@ class SudokuController {
 
         if(isset($request['username'])){
             $this->sudoku->Setusername($request['name']);
-            $this->guessesCount = 0;
-            $this->reset = true;
         }
 
         elseif(isset($request['c'])){
