@@ -39,10 +39,10 @@ td {
 }
 
 .cell:link, .cell:visited {
-    color: blue;
+    color: green;
+    text-decoration: none;
 }
 
-.guess:link, .guess:visited  {
 .guess-right:link, .guess-right:visited  {
     color: green;
     text-decoration: none;
@@ -72,7 +72,7 @@ td {
 }
 
 .wrong {
-    color: orange !important;
+    color: orangered !important;
 
 }
 
