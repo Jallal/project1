@@ -28,16 +28,9 @@ $view = new SudokuView($sudoku);
     </nav>
 </header>
 
-<h1>Congratulations you've finished the puzzle.</h1>
+<h1>Congratulations <?php echo $view->playerName(); ?> you've finished the puzzle.</h1>
+<h1>Number of notes used: <?php echo $view->numberOfNotes(); ?></h1>
 
-
-<br>
-<br>
-<div class="me">
-    <?php
-    echo $view->playerName();
-    ?>
-</div>
 
 <br>
 <br>

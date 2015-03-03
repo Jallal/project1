@@ -12,6 +12,7 @@ class SudokuController {
     private $page ='game.php';     // The next page we will go to
     private $reset = false;
     private $cheatmode = false;
+    private $setUsername = false;
 
 
     public function __construct($sudoku, $request) {
@@ -19,7 +20,8 @@ class SudokuController {
             $this->sudoku = $sudoku;
 
         if(isset($request['username'])){
-            $this->sudoku->Setusername($request['name']);
+            $this->reset = true;
+            $this->setUsername = true;
         }
 
         elseif(isset($request['c'])){
@@ -50,6 +52,9 @@ class SudokuController {
         }
 
 
+    }
+    public function setUsername() {
+        return $this->setUsername;
     }
 
     public function getPage(){

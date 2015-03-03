@@ -12,6 +12,9 @@ $controller = new SudokuController($sudoku, $_REQUEST);
 
 if($controller->isReset()) {
     unset($_SESSION[SUDOKU_SESSION]);
+    if ($controller->setUsername()) {
+        $_SESSION['username'] = $_REQUEST['name'];
+    }
 }
 
 elseif($controller->ischeatMode()){
