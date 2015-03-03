@@ -27,9 +27,32 @@ td {
     font-size: 2em;
 }
 
-.guess:link, .guess:visited  {
+.guess-right:link, .guess-right:visited  {
     color: green;
     text-decoration: none;
+}
+
+.guess-wrong:link, .guess-wrong:visited  {
+    color: red;
+    text-decoration: none;
+}
+
+.blank-cell:link {
+    text-decoration: none;
+}
+
+.notes {
+    text-align: left;
+    font-style: italic;
+    vertical-align: top;
+}
+
+.note-div {
+    padding: .05em 0 .05em 0;
+}
+
+.note-span {
+    padding: 0 .25em 0 .25em;
 }
 
 .guess-box {
